@@ -1,6 +1,6 @@
 # Leyendas · Fondos para tu escritorio
 
-Galería web de 27 fondos ilustrados con diseño de póster. Abre `index.html` para verla sin instalar dependencias. La versión pública está alojada en Vercel.
+Galería web de fondos ilustrados con diseño de póster. Abre `index.html` para verla sin instalar dependencias. La versión pública está alojada en Vercel. El número actualizado de personajes pendientes está en `CAMPEONES-PENDIENTES.md`.
 
 La página permite buscar, filtrar, previsualizar a pantalla completa, descargar e importar imágenes o videos propios. El botón de la esquina superior pausa las animaciones, incluida la textura del fondo. También se respeta la preferencia del sistema para reducir movimiento.
 
