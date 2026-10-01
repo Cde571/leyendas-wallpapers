@@ -1,18 +1,18 @@
 # Campeones pendientes para Leyendas
 
-Actualizado el 1 de octubre de 2026 con la lista oficial de League of Legends, versión 16.19.1. La galería tiene 15 fondos de 14 campeones distintos; Yasuo aparece dos veces. De los 173 campeones actuales, quedan **159** sin fondo.
+Actualizado el 1 de octubre de 2026 con la lista oficial de League of Legends, versión 16.19.1. La galería tiene 27 fondos de 26 campeones distintos; Yasuo aparece dos veces. De los 173 campeones actuales, quedan **147** sin fondo.
 
 Fuentes: [lista oficial de campeones](https://www.leagueoflegends.com/es-es/champions/) y [Riot Data Dragon, versión 16.19.1](https://ddragon.leagueoflegends.com/cdn/16.19.1/data/es_ES/champion.json).
 
-## Ya presentes (14)
+## Ya presentes (26)
 
-Ahri, Ashe, Aurelion Sol, Diana, Ekko, Irelia, Jinx, Kindred, Leona, Lux, Miss Fortune, Teemo, Thresh y Yasuo.
+Aatrox, Ahri, Akali, Akshan, Alistar, Ambessa, Amumu, Anivia, Annie, Aphelios, Ashe, Aurelion Sol, Aurora, Azir, Bardo, Diana, Ekko, Irelia, Jinx, Kindred, Leona, Lux, Miss Fortune, Teemo, Thresh y Yasuo.
 
-## Faltantes (159)
+## Faltantes (147)
 
-### A–D (25)
+### A–D (13)
 
-Aatrox, Akali, Akshan, Alistar, Ambessa, Amumu, Anivia, Annie, Aphelios, Aurora, Azir, Bardo, Bel'Veth, Blitzcrank, Brand, Braum, Briar, Caitlyn, Camille, Cassiopeia, Cho'Gath, Corki, Darius, Dr. Mundo, Draven.
+Bel'Veth, Blitzcrank, Brand, Braum, Briar, Caitlyn, Camille, Cassiopeia, Cho'Gath, Corki, Darius, Dr. Mundo, Draven.
 
 ### E–H (16)
 
