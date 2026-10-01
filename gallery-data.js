@@ -1,0 +1,18 @@
+// Añade aquí tus fondos permanentes. Guarda cada imagen en assets/ y agrega un objeto.
+window.GALLERY_SCENES = [
+  {id:"ahri-jonia",name:"Ahri",title:"El susurro de Jonia",region:"JONIA · NOCHE",description:"Un jardín en calma, magia entre pétalos y agua.",file:"01-ahri-jonia.png",alt:"Ahri en un jardín nocturno de Jonia"},
+  {id:"yasuo-amanecer",name:"Yasuo",title:"El camino del viento",region:"JONIA · AMANECER",description:"Una pausa frente al valle, donde el viento cuenta la historia.",file:"02-yasuo-amanecer.png",alt:"Yasuo en un valle de bambú al amanecer"},
+  {id:"yasuo-filo-ceniza",name:"Yasuo",title:"Filo de ceniza",region:"JONIA · NOCHE",description:"Entre montañas, bruma y brasas, Yasuo contempla la luna con su espada encendida.",file:"15-yasuo-filo-de-ceniza.png",alt:"Yasuo con armadura oscura y espada de brasa sobre una cresta nocturna"},
+  {id:"jinx-zaun",name:"Jinx",title:"Luces de Zaun",region:"ZAUN · NOCHE",description:"La ciudad respira bajo una mirada inquieta y una luz de neón.",file:"03-jinx-zaun.png",alt:"Jinx en un tejado sobre la ciudad nocturna"},
+  {id:"aurelion-sol",name:"Aurelion Sol",title:"El cosmos despierta",region:"COSMOS · CREPÚSCULO",description:"Estrellas y nebulosas acompañan al forjador de mundos.",file:"04-aurelion-sol-cosmos.png",alt:"Aurelion Sol en un cielo cósmico"},
+  {id:"lux-demacia",name:"Lux",title:"Luz sobre Demacia",region:"DEMACIA · AMANECER",description:"La ciudad despierta entre nubes y una luz dorada.",file:"05-lux-demacia.png",alt:"Lux contempla Demacia desde un balcón al amanecer"},
+  {id:"ashe-freljord",name:"Ashe",title:"Aurora de Freljord",region:"FRELJORD · ALBA",description:"El hielo y la aurora abren un horizonte silencioso.",file:"06-ashe-freljord.png",alt:"Ashe en una cordillera nevada bajo una aurora"},
+  {id:"miss-fortune-bilgewater",name:"Miss Fortune",title:"Puerto de Bilgewater",region:"BILGEWATER · ATARDECER",description:"El sol cae sobre las cubiertas mojadas del puerto.",file:"07-miss-fortune-bilgewater.png",alt:"Miss Fortune en un puerto al atardecer"},
+  {id:"ekko-zaun",name:"Ekko",title:"Relojes de Zaun",region:"ZAUN · CREPÚSCULO",description:"Vapor, engranajes y tiempo sobre los tejados.",file:"08-ekko-zaun.png",alt:"Ekko observa Zaun desde un tejado"},
+  {id:"leona-targon",name:"Leona",title:"Primer sol de Targon",region:"TARGON · AMANECER",description:"La montaña recibe la primera luz del día.",file:"09-leona-targon.png",alt:"Leona en un templo de Targon al amanecer"},
+  {id:"diana-targon",name:"Diana",title:"Reflejo lunar",region:"TARGON · NOCHE",description:"La luna descansa sobre las aguas del templo.",file:"10-diana-targon.png",alt:"Diana junto a un estanque bajo la luna"},
+  {id:"irelia-jonia",name:"Irelia",title:"Pétalos de Jonia",region:"JONIA · PRIMAVERA",description:"Un patio tranquilo después de la lluvia.",file:"11-irelia-jonia.png",alt:"Irelia en un patio de Jonia con pétalos"},
+  {id:"kindred-bosque",name:"Kindred",title:"El bosque escucha",region:"BOSQUE · ALBA",description:"Niebla y luciérnagas rodean a los dos espíritus.",file:"12-kindred-bosque.png",alt:"Kindred en un bosque antiguo al amanecer"},
+  {id:"teemo-bandlewood",name:"Teemo",title:"Mañana en Bandlewood",region:"BANDLEWOOD · MAÑANA",description:"Un pequeño descanso junto al arroyo del bosque.",file:"13-teemo-bandlewood.png",alt:"Teemo sentado sobre un hongo en un bosque luminoso"},
+  {id:"thresh-islas-sombra",name:"Thresh",title:"Bruma de las Islas",region:"ISLAS DE LA SOMBRA · NOCHE",description:"Una luz espectral atraviesa las ruinas y la niebla.",file:"14-thresh-islas-sombra.png",alt:"Thresh en una calzada de las Islas de la Sombra"}
+];
