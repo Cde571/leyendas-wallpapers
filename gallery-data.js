@@ -34,5 +34,13 @@ window.GALLERY_SCENES = [
   {id:"irelia-jonia",name:"Irelia",title:"Pétalos de Jonia",region:"JONIA · PRIMAVERA",description:"Un patio tranquilo después de la lluvia.",file:"11-irelia-jonia.png",alt:"Irelia en un patio de Jonia con pétalos"},
   {id:"kindred-bosque",name:"Kindred",title:"El bosque escucha",region:"BOSQUE · ALBA",description:"Niebla y luciérnagas rodean a los dos espíritus.",file:"12-kindred-bosque.png",alt:"Kindred en un bosque antiguo al amanecer"},
   {id:"teemo-bandlewood",name:"Teemo",title:"Mañana en Bandlewood",region:"BANDLEWOOD · MAÑANA",description:"Un pequeño descanso junto al arroyo del bosque.",file:"13-teemo-bandlewood.png",alt:"Teemo sentado sobre un hongo en un bosque luminoso"},
-  {id:"thresh-islas-sombra",name:"Thresh",title:"Bruma de las Islas",region:"ISLAS DE LA SOMBRA · NOCHE",description:"Una luz espectral atraviesa las ruinas y la niebla.",file:"14-thresh-islas-sombra.png",alt:"Thresh en una calzada de las Islas de la Sombra"}
+  {id:"thresh-islas-sombra",name:"Thresh",title:"Bruma de las Islas",region:"ISLAS DE LA SOMBRA · NOCHE",description:"Una luz espectral atraviesa las ruinas y la niebla.",file:"14-thresh-islas-sombra.png",alt:"Thresh en una calzada de las Islas de la Sombra"},
+  {id:"36-cho-gath",name:"Cho'Gath",title:"Cho'Gath",region:"EL VACÍO · NOCHE",description:"Un paisaje de el vacío inspirado en Cho'Gath.",file:"36-cho-gath.webp",alt:"Cho'Gath en un paisaje de el vacío"},
+  {id:"37-corki",name:"Corki",title:"Corki",region:"PILTOVER · AMANECER",description:"Un paisaje de piltover inspirado en Corki.",file:"37-corki.webp",alt:"Corki en un paisaje de piltover"},
+  {id:"38-darius",name:"Darius",title:"Darius",region:"NOXUS · CREPÚSCULO",description:"Un paisaje de noxus inspirado en Darius.",file:"38-darius.webp",alt:"Darius en un paisaje de noxus"},
+  {id:"39-dr-mundo",name:"Dr. Mundo",title:"Dr. Mundo",region:"ZAUN · ATARDECER",description:"Un paisaje de zaun inspirado en Dr. Mundo.",file:"39-dr-mundo.webp",alt:"Dr. Mundo en un paisaje de zaun"},
+  {id:"40-draven",name:"Draven",title:"Draven",region:"NOXUS · NOCHE",description:"Un paisaje de noxus inspirado en Draven.",file:"40-draven.webp",alt:"Draven en un paisaje de noxus"},
+  {id:"41-elise",name:"Elise",title:"Elise",region:"NOXUS · AMANECER",description:"Un paisaje de noxus inspirado en Elise.",file:"41-elise.webp",alt:"Elise en un paisaje de noxus"},
+  {id:"43-ezreal",name:"Ezreal",title:"Ezreal",region:"PILTOVER · ATARDECER",description:"Un paisaje de piltover inspirado en Ezreal.",file:"43-ezreal.webp",alt:"Ezreal en un paisaje de piltover"},
+  {id:"42-evelynn",name:"Evelynn",title:"Evelynn",region:"RUNATERRA · CREPÚSCULO",description:"Un paisaje de runaterra inspirado en Evelynn.",file:"42-evelynn.webp",alt:"Evelynn en un paisaje de runaterra"}
 ];
