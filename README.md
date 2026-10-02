@@ -8,6 +8,8 @@ La página permite buscar, filtrar, previsualizar a pantalla completa, descargar
 
 Una pestaña web no puede cambiar el fondo del sistema. Descarga **Leyendas-Portable.exe** desde [la última versión de GitHub](https://github.com/Cde571/leyendas-wallpapers/releases/latest) para aplicar imágenes fijas en Windows. Para videos en Windows, instala también [Lively Wallpaper](https://github.com/rocksdanister/lively).
 
+El [pack completo](https://github.com/Cde571/leyendas-wallpapers/releases/download/v0.2.0/pack-174-fondos-league.zip) reúne los 174 PNG originales y un prompt de movimiento suave para cada fondo.
+
 ## Añadir fondos a la galería
 
 Guarda cada imagen en `assets/` y añade una entrada con `id` único a `gallery-data.js`. El fondo de Yasuo con el rostro corregido está en `assets/15-yasuo-filo-de-ceniza.png`; sus prompts están en `PROMPTS-YASUO-FILO-DE-CENIZA.md`.
