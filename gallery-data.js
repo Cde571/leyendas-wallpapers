@@ -114,5 +114,21 @@ window.GALLERY_SCENES = [
   {id:"100-nunu-y-willump",name:"Nunu y Willump",title:"Nunu y Willump",region:"FRELJORD · NOCHE",description:"Un paisaje de freljord inspirado en Nunu y Willump.",file:"100-nunu-y-willump.webp",alt:"Nunu y Willump en un paisaje de freljord"},
   {id:"101-olaf",name:"Olaf",title:"Olaf",region:"FRELJORD · AMANECER",description:"Un paisaje de freljord inspirado en Olaf.",file:"101-olaf.webp",alt:"Olaf en un paisaje de freljord"},
   {id:"102-orianna",name:"Orianna",title:"Orianna",region:"PILTOVER · CREPÚSCULO",description:"Un paisaje de piltover inspirado en Orianna.",file:"102-orianna.webp",alt:"Orianna en un paisaje de piltover"},
-  {id:"115-rengar",name:"Rengar",title:"Rengar",region:"IXTAL · ATARDECER",description:"Un paisaje de ixtal inspirado en Rengar.",file:"115-rengar.webp",alt:"Rengar en un paisaje de ixtal"}
+  {id:"115-rengar",name:"Rengar",title:"Rengar",region:"IXTAL · ATARDECER",description:"Un paisaje de ixtal inspirado en Rengar.",file:"115-rengar.webp",alt:"Rengar en un paisaje de ixtal"},
+  {id:"119-samira",name:"Samira",title:"Samira",region:"NOXUS · ATARDECER",description:"Un paisaje de noxus inspirado en Samira.",file:"119-samira.webp",alt:"Samira en un paisaje de noxus"},
+  {id:"120-sejuani",name:"Sejuani",title:"Sejuani",region:"FRELJORD · NOCHE",description:"Un paisaje de freljord inspirado en Sejuani.",file:"120-sejuani.webp",alt:"Sejuani en un paisaje de freljord"},
+  {id:"121-senna",name:"Senna",title:"Senna",region:"ISLAS DE LA SOMBRA · AMANECER",description:"Un paisaje de islas de la sombra inspirado en Senna.",file:"121-senna.webp",alt:"Senna en un paisaje de islas de la sombra"},
+  {id:"122-seraphine",name:"Seraphine",title:"Seraphine",region:"PILTOVER · CREPÚSCULO",description:"Un paisaje de piltover inspirado en Seraphine.",file:"122-seraphine.webp",alt:"Seraphine en un paisaje de piltover"},
+  {id:"123-sett",name:"Sett",title:"Sett",region:"JONIA · ATARDECER",description:"Un paisaje de jonia inspirado en Sett.",file:"123-sett.webp",alt:"Sett en un paisaje de jonia"},
+  {id:"124-shaco",name:"Shaco",title:"Shaco",region:"RUNATERRA · NOCHE",description:"Un paisaje de runaterra inspirado en Shaco.",file:"124-shaco.webp",alt:"Shaco en un paisaje de runaterra"},
+  {id:"126-shyvana",name:"Shyvana",title:"Shyvana",region:"DEMACIA · CREPÚSCULO",description:"Un paisaje de demacia inspirado en Shyvana.",file:"126-shyvana.webp",alt:"Shyvana en un paisaje de demacia"},
+  {id:"127-singed",name:"Singed",title:"Singed",region:"ZAUN · ATARDECER",description:"Un paisaje de zaun inspirado en Singed.",file:"127-singed.webp",alt:"Singed en un paisaje de zaun"},
+  {id:"125-shen",name:"Shen",title:"Shen",region:"JONIA · AMANECER",description:"Un paisaje de jonia inspirado en Shen.",file:"125-shen.webp",alt:"Shen en un paisaje de jonia"},
+  {id:"128-sion",name:"Sion",title:"Sion",region:"NOXUS · NOCHE",description:"Un paisaje de noxus inspirado en Sion.",file:"128-sion.webp",alt:"Sion en un paisaje de noxus"},
+  {id:"129-sivir",name:"Sivir",title:"Sivir",region:"SHURIMA · AMANECER",description:"Un paisaje de shurima inspirado en Sivir.",file:"129-sivir.webp",alt:"Sivir en un paisaje de shurima"},
+  {id:"130-skarner",name:"Skarner",title:"Skarner",region:"IXTAL · CREPÚSCULO",description:"Un paisaje de ixtal inspirado en Skarner.",file:"130-skarner.webp",alt:"Skarner en un paisaje de ixtal"},
+  {id:"117-rumble",name:"Rumble",title:"Rumble",region:"BANDLE CITY · AMANECER",description:"Un paisaje de bandle city inspirado en Rumble.",file:"117-rumble.webp",alt:"Rumble en un paisaje de bandle city"},
+  {id:"116-riven",name:"Riven",title:"Riven",region:"NOXUS · NOCHE",description:"Un paisaje de noxus inspirado en Riven.",file:"116-riven.webp",alt:"Riven en un paisaje de noxus"},
+  {id:"118-ryze",name:"Ryze",title:"Ryze",region:"RUNATERRA · CREPÚSCULO",description:"Un paisaje de runaterra inspirado en Ryze.",file:"118-ryze.webp",alt:"Ryze en un paisaje de runaterra"},
+  {id:"131-smolder",name:"Smolder",title:"Smolder",region:"RUNATERRA · ATARDECER",description:"Un paisaje de runaterra inspirado en Smolder.",file:"131-smolder.webp",alt:"Smolder en un paisaje de runaterra"}
 ];
