@@ -98,5 +98,21 @@ window.GALLERY_SCENES = [
   {id:"84-maestro-yi",name:"Maestro Yi",title:"Maestro Yi",region:"JONIA · NOCHE",description:"Un paisaje de jonia inspirado en Maestro Yi.",file:"84-maestro-yi.webp",alt:"Maestro Yi en un paisaje de jonia"},
   {id:"85-malphite",name:"Malphite",title:"Malphite",region:"IXTAL · AMANECER",description:"Un paisaje de ixtal inspirado en Malphite.",file:"85-malphite.webp",alt:"Malphite en un paisaje de ixtal"},
   {id:"86-malzahar",name:"Malzahar",title:"Malzahar",region:"EL VACÍO · CREPÚSCULO",description:"Un paisaje de el vacío inspirado en Malzahar.",file:"86-malzahar.webp",alt:"Malzahar en un paisaje de el vacío"},
-  {id:"99-nocturne",name:"Nocturne",title:"Nocturne",region:"RUNATERRA · ATARDECER",description:"Un paisaje de runaterra inspirado en Nocturne.",file:"99-nocturne.webp",alt:"Nocturne en un paisaje de runaterra"}
+  {id:"99-nocturne",name:"Nocturne",title:"Nocturne",region:"RUNATERRA · ATARDECER",description:"Un paisaje de runaterra inspirado en Nocturne.",file:"99-nocturne.webp",alt:"Nocturne en un paisaje de runaterra"},
+  {id:"103-ornn",name:"Ornn",title:"Ornn",region:"FRELJORD · ATARDECER",description:"Un paisaje de freljord inspirado en Ornn.",file:"103-ornn.webp",alt:"Ornn en un paisaje de freljord"},
+  {id:"104-pantheon",name:"Pantheon",title:"Pantheon",region:"TARGON · NOCHE",description:"Un paisaje de targon inspirado en Pantheon.",file:"104-pantheon.webp",alt:"Pantheon en un paisaje de targon"},
+  {id:"105-poppy",name:"Poppy",title:"Poppy",region:"DEMACIA · AMANECER",description:"Un paisaje de demacia inspirado en Poppy.",file:"105-poppy.webp",alt:"Poppy en un paisaje de demacia"},
+  {id:"106-pyke",name:"Pyke",title:"Pyke",region:"BILGEWATER · CREPÚSCULO",description:"Un paisaje de bilgewater inspirado en Pyke.",file:"106-pyke.webp",alt:"Pyke en un paisaje de bilgewater"},
+  {id:"107-qiyana",name:"Qiyana",title:"Qiyana",region:"IXTAL · ATARDECER",description:"Un paisaje de ixtal inspirado en Qiyana.",file:"107-qiyana.webp",alt:"Qiyana en un paisaje de ixtal"},
+  {id:"108-quinn",name:"Quinn",title:"Quinn",region:"DEMACIA · NOCHE",description:"Un paisaje de demacia inspirado en Quinn.",file:"108-quinn.webp",alt:"Quinn en un paisaje de demacia"},
+  {id:"109-rakan",name:"Rakan",title:"Rakan",region:"JONIA · AMANECER",description:"Un paisaje de jonia inspirado en Rakan.",file:"109-rakan.webp",alt:"Rakan en un paisaje de jonia"},
+  {id:"110-rammus",name:"Rammus",title:"Rammus",region:"SHURIMA · CREPÚSCULO",description:"Un paisaje de shurima inspirado en Rammus.",file:"110-rammus.webp",alt:"Rammus en un paisaje de shurima"},
+  {id:"111-rek-sai",name:"Rek'Sai",title:"Rek'Sai",region:"EL VACÍO · ATARDECER",description:"Un paisaje de el vacío inspirado en Rek'Sai.",file:"111-rek-sai.webp",alt:"Rek'Sai en un paisaje de el vacío"},
+  {id:"112-rell",name:"Rell",title:"Rell",region:"NOXUS · NOCHE",description:"Un paisaje de noxus inspirado en Rell.",file:"112-rell.webp",alt:"Rell en un paisaje de noxus"},
+  {id:"113-renata-glasc",name:"Renata Glasc",title:"Renata Glasc",region:"ZAUN · AMANECER",description:"Un paisaje de zaun inspirado en Renata Glasc.",file:"113-renata-glasc.webp",alt:"Renata Glasc en un paisaje de zaun"},
+  {id:"114-renekton",name:"Renekton",title:"Renekton",region:"SHURIMA · CREPÚSCULO",description:"Un paisaje de shurima inspirado en Renekton.",file:"114-renekton.webp",alt:"Renekton en un paisaje de shurima"},
+  {id:"100-nunu-y-willump",name:"Nunu y Willump",title:"Nunu y Willump",region:"FRELJORD · NOCHE",description:"Un paisaje de freljord inspirado en Nunu y Willump.",file:"100-nunu-y-willump.webp",alt:"Nunu y Willump en un paisaje de freljord"},
+  {id:"101-olaf",name:"Olaf",title:"Olaf",region:"FRELJORD · AMANECER",description:"Un paisaje de freljord inspirado en Olaf.",file:"101-olaf.webp",alt:"Olaf en un paisaje de freljord"},
+  {id:"102-orianna",name:"Orianna",title:"Orianna",region:"PILTOVER · CREPÚSCULO",description:"Un paisaje de piltover inspirado en Orianna.",file:"102-orianna.webp",alt:"Orianna en un paisaje de piltover"},
+  {id:"115-rengar",name:"Rengar",title:"Rengar",region:"IXTAL · ATARDECER",description:"Un paisaje de ixtal inspirado en Rengar.",file:"115-rengar.webp",alt:"Rengar en un paisaje de ixtal"}
 ];

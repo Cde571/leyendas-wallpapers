@@ -1,14 +1,14 @@
 # Campeones pendientes para Leyendas
 
-Actualizado el 1 de octubre de 2026 con la lista oficial de League of Legends, versión 16.19.1. La galería tiene 99 fondos de 98 campeones distintos; Yasuo aparece dos veces. De los 173 campeones actuales, quedan **75** sin fondo.
+Actualizado el 1 de octubre de 2026 con la lista oficial de League of Legends, versión 16.19.1. La galería tiene 115 fondos de 114 campeones distintos; Yasuo aparece dos veces. De los 173 campeones actuales, quedan **59** sin fondo.
 
 Fuentes: [lista oficial de campeones](https://www.leagueoflegends.com/es-es/champions/) y [Riot Data Dragon, versión 16.19.1](https://ddragon.leagueoflegends.com/cdn/16.19.1/data/es_ES/champion.json).
 
-## Ya presentes (98)
+## Ya presentes (114)
 
-Aatrox, Ahri, Akali, Akshan, Alistar, Ambessa, Amumu, Anivia, Annie, Aphelios, Ashe, Aurelion Sol, Aurora, Azir, Bardo, Bel'Veth, Blitzcrank, Brand, Braum, Briar, Caitlyn, Camille, Cassiopeia, Cho'Gath, Corki, Darius, Diana, Dr. Mundo, Draven, Ekko, Elise, Evelynn, Ezreal, Fiddlesticks, Fiora, Fizz, Galio, Gangplank, Garen, Gnar, Gragas, Graves, Gwen, Hecarim, Heimerdinger, Hwei, Illaoi, Irelia, Ivern, Janna, Jarvan IV, Jax, Jayce, Jhin, Jinx, K'Sante, Kai'Sa, Kalista, Karma, Karthus, Kassadin, Katarina, Kayle, Kayn, Kennen, Kha'Zix, Kindred, Kled, Kog'Maw, LeBlanc, Lee Sin, Leona, Lillia, Lissandra, Locke, Lucian, Lulu, Lux, Maestro Yi, Malphite, Malzahar, Maokai, Mel, Milio, Miss Fortune, Mordekaiser, Morgana, Naafiri, Nami, Nasus, Nautilus, Neeko, Nidalee, Nilah, Nocturne, Teemo, Thresh, Yasuo.
+Aatrox, Ahri, Akali, Akshan, Alistar, Ambessa, Amumu, Anivia, Annie, Aphelios, Ashe, Aurelion Sol, Aurora, Azir, Bardo, Bel'Veth, Blitzcrank, Brand, Braum, Briar, Caitlyn, Camille, Cassiopeia, Cho'Gath, Corki, Darius, Diana, Dr. Mundo, Draven, Ekko, Elise, Evelynn, Ezreal, Fiddlesticks, Fiora, Fizz, Galio, Gangplank, Garen, Gnar, Gragas, Graves, Gwen, Hecarim, Heimerdinger, Hwei, Illaoi, Irelia, Ivern, Janna, Jarvan IV, Jax, Jayce, Jhin, Jinx, K'Sante, Kai'Sa, Kalista, Karma, Karthus, Kassadin, Katarina, Kayle, Kayn, Kennen, Kha'Zix, Kindred, Kled, Kog'Maw, LeBlanc, Lee Sin, Leona, Lillia, Lissandra, Locke, Lucian, Lulu, Lux, Maestro Yi, Malphite, Malzahar, Maokai, Mel, Milio, Miss Fortune, Mordekaiser, Morgana, Naafiri, Nami, Nasus, Nautilus, Neeko, Nidalee, Nilah, Nocturne, Nunu y Willump, Olaf, Orianna, Ornn, Pantheon, Poppy, Pyke, Qiyana, Quinn, Rakan, Rammus, Rek'Sai, Rell, Renata Glasc, Renekton, Rengar, Teemo, Thresh, Yasuo.
 
-## Faltantes (75)
+## Faltantes (59)
 
 ### A–D (0)
 
@@ -22,9 +22,9 @@ Aatrox, Ahri, Akali, Akshan, Alistar, Ambessa, Amumu, Anivia, Annie, Aphelios, A
 
 .
 
-### M–R (19)
+### M–R (3)
 
-Nunu y Willump, Olaf, Orianna, Ornn, Pantheon, Poppy, Pyke, Qiyana, Quinn, Rakan, Rammus, Rek'Sai, Rell, Renata Glasc, Renekton, Rengar, Riven, Rumble, Ryze.
+Riven, Rumble, Ryze.
 
 ### S–Z (56)
 
