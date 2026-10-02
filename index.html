@@ -22,7 +22,7 @@
     <main id="inicio" class="main-content">
       <header class="topbar">
         <span class="top-label">✦ UNA COLECCIÓN PARA EXPLORAR</span>
-        <div class="top-actions"><button id="surprise-button" type="button">Sorpréndeme ↗</button><button id="import-button" type="button">＋ Añadir fondo</button><input id="import-input" type="file" accept="image/png,image/jpeg,image/webp,video/mp4,video/webm" multiple hidden><button id="motion-button" type="button" aria-pressed="false" aria-label="Pausar movimiento">◉</button></div>
+        <div class="top-actions"><button id="surprise-button" type="button">Sorpréndeme ↗</button><button id="import-button" type="button">＋ Añadir fondo</button><button id="motion-button" type="button" aria-pressed="false" aria-label="Pausar movimiento">◉</button></div>
       </header>
 
       <section class="hero" aria-labelledby="hero-title">
@@ -54,7 +54,7 @@
       </div>
       <div class="detail-panel">
         <div class="detail-top"><span class="detail-label">✦ COLECCIÓN LEYENDAS</span><button id="detail-close" type="button" aria-label="Cerrar vista completa">×</button></div>
-        <div class="detail-story"><span id="detail-region" class="eyebrow"></span><h2 id="detail-title"></h2><div class="story-copy"><span class="story-heading">✦ SOBRE ESTA ESCENA</span><p id="detail-description"></p></div></div>
+        <div class="detail-story"><span id="detail-region" class="eyebrow"></span><h2 id="detail-title"></h2><div class="story-copy"><span class="story-heading">✦ SOBRE ESTA ESCENA</span><p id="detail-description"></p></div><div id="detail-meta" class="detail-meta" hidden></div></div>
         <section id="prompt-panel" class="prompt-panel" aria-label="Prompt de animación">
           <div class="prompt-bar"><span>✦ PROMPT PARA ANIMARLO</span><button id="copy-prompt" type="button">Copiar prompt ⧉</button></div>
           <details id="prompt-details"><summary>Leer prompt completo <span aria-hidden="true">↓</span></summary><p id="detail-prompt" lang="en"></p></details>
@@ -65,6 +65,29 @@
         <button id="remove-button" class="remove-button" type="button" hidden>Quitar de la colección</button>
       </div>
     </div>
+  </dialog>
+  <dialog id="import-dialog" class="import-dialog" aria-labelledby="import-title">
+    <form id="import-form" class="import-form">
+      <div class="import-heading"><div><span class="eyebrow">✦ TU COLECCIÓN</span><h2 id="import-title">Añadir fondo</h2><p>Prepara una nueva escena para tu escritorio.</p></div><button id="import-close" class="import-close" type="button" aria-label="Cerrar">×</button></div>
+      <div class="import-layout">
+        <div class="import-media">
+          <label class="import-drop" for="import-input"><span class="import-drop-icon">✦</span><strong>Elige una imagen o un video</strong><span>PNG, JPG, WebP, MP4 o WebM · máximo 100 MB</span><span class="import-browse">Seleccionar archivo ↗</span></label>
+          <input id="import-input" type="file" accept="image/png,image/jpeg,image/webp,video/mp4,video/webm">
+          <div id="import-preview" class="import-preview" hidden><img id="import-preview-image" alt="Vista previa del fondo" hidden><video id="import-preview-video" muted loop playsinline controls hidden></video></div>
+          <div class="import-requirement"><strong>Medida requerida</strong><span>Mínimo 1280 × 720 px · formato horizontal 16:9 (±2 %)</span><small>Recomendado: 1920 × 1080 px o superior.</small></div>
+          <p id="import-file-status" class="import-file-status" role="status" aria-live="polite">Selecciona un archivo para revisar su medida.</p>
+        </div>
+        <div class="import-fields">
+          <div class="import-field-row"><label><span>Personaje o lugar <b>*</b></span><input id="import-name" name="name" type="text" required minlength="2" maxlength="60" placeholder="Ej. Jinx" autocomplete="off"></label><label><span>Región <b>*</b></span><input id="import-region" name="region" type="text" list="import-regions" required minlength="2" maxlength="60" placeholder="Ej. Zaun" autocomplete="off"><datalist id="import-regions"></datalist></label></div>
+          <label><span>Título de la escena <b>*</b></span><input id="import-title-field" name="title" type="text" required minlength="2" maxlength="80" placeholder="Ej. Luces de Zaun"></label>
+          <label><span>Descripción <b>*</b></span><textarea id="import-description" name="description" required minlength="20" maxlength="700" rows="4" placeholder="Cuenta qué aparece en la escena y qué atmósfera tiene."></textarea></label>
+          <div class="import-field-row"><label><span>Skin o variante <small>Opcional</small></span><input id="import-skin" name="skin" type="text" maxlength="80" placeholder="Ej. Arcane"></label><label><span>Autor o crédito <small>Opcional</small></span><input id="import-credit" name="credit" type="text" maxlength="100" placeholder="Tu nombre o estudio"></label></div>
+          <label><span>Prompt de animación <small>Opcional</small></span><textarea id="import-prompt" name="prompt" maxlength="4000" rows="3" placeholder="Describe el movimiento suave de esta escena."></textarea></label>
+          <p class="import-privacy">Tu fondo queda en este navegador o en la app de este equipo. Añadirlo aquí no lo publica en el catálogo.</p>
+          <div class="import-actions"><button id="import-cancel" type="button">Cancelar</button><button id="import-save" class="primary-action" type="submit" disabled>Guardar en mi colección ↗</button></div>
+        </div>
+      </div>
+    </form>
   </dialog>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 </body>

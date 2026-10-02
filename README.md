@@ -2,7 +2,7 @@
 
 Galería web de fondos ilustrados con diseño de póster. Abre `index.html` para verla sin instalar dependencias. La versión pública está alojada en Vercel. El número actualizado de personajes pendientes está en `CAMPEONES-PENDIENTES.md`.
 
-La página permite buscar, filtrar, previsualizar a pantalla completa, descargar e importar imágenes o videos propios. El botón de la esquina superior pausa las animaciones, incluida la textura del fondo. También se respeta la preferencia del sistema para reducir movimiento.
+La página permite buscar, filtrar, previsualizar a pantalla completa, descargar e importar imágenes o videos propios. **Añadir fondo** abre una ficha con vista previa y validación: PNG, JPG, WebP, MP4 o WebM de hasta 100 MB; mínimo 1280 × 720 px y formato horizontal 16:9 (margen del 2 %). Pide personaje o lugar, región, título y descripción; skin, autor y prompt son opcionales. El archivo añadido se guarda solo en el navegador de ese equipo. El botón de la esquina superior pausa las animaciones, incluida la textura del fondo. También se respeta la preferencia del sistema para reducir movimiento.
 
 ## Aplicar un fondo al escritorio
 

@@ -69,7 +69,7 @@ function normalize(value) { return value.toLocaleLowerCase("es").normalize("NFD"
 function isFiltering() { return Boolean(search.value.trim()) || region.value !== "all"; }
 function matchingScenes() {
   const query = normalize(search.value.trim());
-  return scenes.filter(scene => (region.value === "all" || regionName(scene) === region.value) && (!query || normalize(`${scene.name} ${scene.title} ${scene.region} ${scene.description}`).includes(query)));
+  return scenes.filter(scene => (region.value === "all" || regionName(scene) === region.value) && (!query || normalize(`${scene.name} ${scene.title} ${scene.region} ${scene.description} ${scene.skin || ""} ${scene.credit || ""}`).includes(query)));
 }
 function navigationScenes() { return matchingScenes(); }
 
@@ -79,6 +79,8 @@ function populateRegions() {
   region.replaceChildren(new Option("Todas las regiones","all"));
   names.forEach(name => region.add(new Option(name,name)));
   region.value = names.includes(chosen) ? chosen : "all";
+  const suggestions = $("#import-regions");
+  suggestions.replaceChildren(...names.filter(name => name !== "TU COLECCIÓN").map(name => new Option(name,name)));
 }
 
 function renderGallery() {
@@ -177,7 +179,14 @@ function showDetail(scene) {
   $("#detail-region").textContent = scene.region;
   $("#detail-title").textContent = scene.title;
   $("#detail-description").textContent = scene.description;
-  const prompt = prompts[scene.file?.replace(/\.[^.]+$/, "")];
+  const meta = $("#detail-meta");
+  meta.replaceChildren();
+  if (scene.imported) {
+    const details = [scene.skin && `Variante: ${scene.skin}`,scene.credit && `Crédito: ${scene.credit}`,scene.width && scene.height && `${scene.width} × ${scene.height} px`,scene.size && fileSize(scene.size),scene.duration && `${Math.round(scene.duration)} s`,scene.kind === "video" ? "En movimiento" : "Imagen fija"];
+    details.filter(Boolean).forEach(value => { const item = document.createElement("span"); item.textContent = value; meta.append(item); });
+  }
+  meta.hidden = !meta.childElementCount;
+  const prompt = scene.prompt || prompts[scene.file?.replace(/\.[^.]+$/, "")];
   $("#prompt-panel").hidden = !prompt;
   $("#detail-prompt").textContent = prompt || "";
   $("#prompt-details").open = false;
@@ -289,7 +298,7 @@ function fallbackCopy(text) {
 }
 async function copyPrompt() {
   const scene = scenes.find(item => item.id === selectedId);
-  const prompt = prompts[scene?.file?.replace(/\.[^.]+$/, "")];
+  const prompt = scene?.prompt || prompts[scene?.file?.replace(/\.[^.]+$/, "")];
   if (!prompt) return;
   let copied = false;
   try {
@@ -352,7 +361,7 @@ async function loadImported() {
   });
   records.forEach(record => {
     if (scenes.some(scene => scene.id === record.id)) return;
-    scenes.push({id:record.id,name:record.name,title:record.title,region:"TU COLECCIÓN",description:record.kind === "video" ? "Tu fondo en movimiento." : "Un fondo que añadiste a la galería.",alt:record.title,fileName:record.fileName,url:URL.createObjectURL(record.blob),blob:record.blob,kind:record.kind,imported:true});
+    scenes.push({id:record.id,name:record.name,title:record.title,region:record.region || "TU COLECCIÓN",description:record.description || (record.kind === "video" ? "Tu fondo en movimiento." : "Un fondo que añadiste a la galería."),skin:record.skin,credit:record.credit,prompt:record.prompt,width:record.width,height:record.height,size:record.size || record.blob?.size,duration:record.duration,alt:record.title,fileName:record.fileName,url:URL.createObjectURL(record.blob),blob:record.blob,kind:record.kind,imported:true});
   });
   if (records.length) { populateRegions(); renderGallery(); }
 }
@@ -467,25 +476,108 @@ $("#remove-button").addEventListener("click",async () => {
   renderGallery();
   showToast("El fondo se quitó de tu colección.");
 });
-$("#import-button").addEventListener("click",() => $("#import-input").click());
-$("#import-input").addEventListener("change",async event => {
-  const files = [...event.currentTarget.files].filter(file => ["image/png","image/jpeg","image/webp","video/mp4","video/webm"].includes(file.type) && file.size <= 100 * 1024 * 1024);
-  event.currentTarget.value = "";
-  if (!files.length) return;
-  const records = [];
-  for (const file of files) {
-    const id = `added-${Date.now()}-${Math.random().toString(36).slice(2,9)}`;
-    const name = titleFromFile(file.name);
-    const kind = file.type.startsWith("video/") ? "video" : "image";
-    records.push({id,name,title:name,fileName:file.name,kind,blob:file});
-    scenes.push({id,name,title:name,region:"TU COLECCIÓN",description:kind === "video" ? "Tu fondo en movimiento." : "Un fondo que añadiste a la galería.",alt:name,fileName:file.name,url:URL.createObjectURL(file),blob:file,kind,imported:true});
+const importDialog = $("#import-dialog");
+const importForm = $("#import-form");
+const importInput = $("#import-input");
+const importPreviewImage = $("#import-preview-image");
+const importPreviewVideo = $("#import-preview-video");
+const importStatus = $("#import-file-status");
+const importState = {file:null,kind:null,width:0,height:0,duration:0,url:null,valid:false,token:0};
+const allowedMedia = ["image/png","image/jpeg","image/webp","video/mp4","video/webm"];
+function fileSize(bytes) { return `${(bytes / 1024 / 1024).toLocaleString("es-CO",{maximumFractionDigits:1})} MB`; }
+function importMessage(message,state = "") { importStatus.textContent = message; importStatus.className = `import-file-status ${state}`; }
+function resetImportMedia() {
+  importState.token++;
+  importPreviewVideo.pause();
+  importPreviewVideo.removeAttribute("src");
+  importPreviewVideo.load();
+  importPreviewImage.removeAttribute("src");
+  if (importState.url) URL.revokeObjectURL(importState.url);
+  Object.assign(importState,{file:null,kind:null,width:0,height:0,duration:0,url:null,valid:false});
+  $("#import-preview").hidden = true;
+  importPreviewImage.hidden = true;
+  importPreviewVideo.hidden = true;
+  $("#import-save").disabled = true;
+}
+function completeImportInspection(token,width,height,duration = 0) {
+  if (token !== importState.token) return;
+  importState.width = width;
+  importState.height = height;
+  importState.duration = Number.isFinite(duration) ? duration : 0;
+  const ratio = width / height;
+  const valid = width >= 1280 && height >= 720 && Number.isFinite(ratio) && Math.abs(ratio / (16 / 9) - 1) <= .02;
+  importState.valid = valid;
+  $("#import-save").disabled = !valid;
+  const specs = `${width} × ${height} px · ${fileSize(importState.file.size)}${importState.kind === "video" && importState.duration ? ` · ${Math.round(importState.duration)} s` : ""}`;
+  importMessage(valid ? `✓ Medida correcta · ${specs}` : `Esta medida (${width} × ${height} px) no cumple el mínimo horizontal de 1280 × 720 px en 16:9.`,valid ? "valid" : "invalid");
+}
+function inspectImportFile(file) {
+  const previousAutoTitle = importState.file ? titleFromFile(importState.file.name) : "";
+  const titleField = $("#import-title-field");
+  const autoTitle = !titleField.value || titleField.value === previousAutoTitle;
+  resetImportMedia();
+  if (!file) { importMessage("Selecciona un archivo para revisar su medida."); return; }
+  if (!allowedMedia.includes(file.type)) { importMessage("Formato no compatible. Usa PNG, JPG, WebP, MP4 o WebM.","invalid"); return; }
+  if (file.size > 100 * 1024 * 1024) { importMessage("El archivo supera el máximo de 100 MB.","invalid"); return; }
+  if (!file.size) { importMessage("El archivo está vacío.","invalid"); return; }
+  importState.file = file;
+  importState.kind = file.type.startsWith("video/") ? "video" : "image";
+  importState.url = URL.createObjectURL(file);
+  const token = importState.token;
+  $("#import-preview").hidden = false;
+  if (autoTitle) titleField.value = titleFromFile(file.name);
+  importMessage("Comprobando las dimensiones del archivo…");
+  if (importState.kind === "video") {
+    importPreviewVideo.hidden = false;
+    importPreviewVideo.onloadedmetadata = () => completeImportInspection(token,importPreviewVideo.videoWidth,importPreviewVideo.videoHeight,importPreviewVideo.duration);
+    importPreviewVideo.onerror = () => { if (token === importState.token) importMessage("No se pudo leer el video. Prueba con otro archivo MP4 o WebM.","invalid"); };
+    importPreviewVideo.src = importState.url;
+    importPreviewVideo.load();
+  } else {
+    importPreviewImage.hidden = false;
+    importPreviewImage.onload = () => completeImportInspection(token,importPreviewImage.naturalWidth,importPreviewImage.naturalHeight);
+    importPreviewImage.onerror = () => { if (token === importState.token) importMessage("No se pudo leer la imagen. Prueba con otro archivo.","invalid"); };
+    importPreviewImage.src = importState.url;
   }
+}
+function closeImport() { if (importDialog.open) importDialog.close(); }
+$("#import-button").addEventListener("click",() => {
+  importForm.reset();
+  resetImportMedia();
+  importMessage("Selecciona un archivo para revisar su medida.");
+  importDialog.showModal();
+  document.body.classList.add("modal-open");
+  $("#import-close").focus({preventScroll:true});
+});
+$("#import-close").addEventListener("click",closeImport);
+$("#import-cancel").addEventListener("click",closeImport);
+importDialog.addEventListener("click",event => { if (event.target === importDialog) closeImport(); });
+importDialog.addEventListener("close",() => { resetImportMedia(); if (!dialog.open) document.body.classList.remove("modal-open"); });
+importInput.addEventListener("change",event => inspectImportFile(event.currentTarget.files[0]));
+const importDrop = $(".import-drop");
+importDrop.addEventListener("dragover",event => { event.preventDefault(); importDrop.classList.add("is-dragging"); });
+importDrop.addEventListener("dragleave",() => importDrop.classList.remove("is-dragging"));
+importDrop.addEventListener("drop",event => { event.preventDefault(); importDrop.classList.remove("is-dragging"); inspectImportFile(event.dataTransfer?.files[0]); });
+importForm.addEventListener("submit",async event => {
+  event.preventDefault();
+  if (!importState.valid || !importState.file) { importMessage("Selecciona un archivo que cumpla la medida requerida.","invalid"); return; }
+  const fields = ["name","region","title","description"].map(name => importForm.elements.namedItem(name));
+  for (const field of fields) {
+    field.value = field.value.trim();
+    if (!field.checkValidity()) { field.reportValidity(); field.focus(); return; }
+  }
+  const file = importState.file;
+  const id = `added-${Date.now()}-${Math.random().toString(36).slice(2,9)}`;
+  const record = {id,name:$("#import-name").value,region:$("#import-region").value,title:$("#import-title-field").value,description:$("#import-description").value,skin:$("#import-skin").value.trim(),credit:$("#import-credit").value.trim(),prompt:$("#import-prompt").value.trim(),width:importState.width,height:importState.height,size:file.size,duration:importState.duration,fileName:file.name,kind:importState.kind,blob:file};
+  $("#import-save").disabled = true;
+  const saved = await saveImported(record);
+  scenes.push({...record,alt:record.title,url:URL.createObjectURL(file),imported:true});
+  closeImport();
   clearFilters();
   populateRegions();
   renderGallery();
-  openDetail(scenes[scenes.length-1].id);
-  const saved = await Promise.all(records.map(saveImported));
-  showToast(saved.every(Boolean) ? `${files.length} ${files.length === 1 ? "fondo añadido" : "fondos añadidos"} a tu colección.` : "Fondo añadido para esta sesión. Consulta LEEME.md para guardarlo en el paquete.");
+  openDetail(id);
+  showToast(saved ? "Fondo añadido a tu colección." : "Fondo disponible durante esta sesión. No se pudo guardar en este dispositivo.");
 });
 
 async function importPayload(scene) {
@@ -513,7 +605,7 @@ $("#detail-apply").addEventListener("click",async event => {
   if (!window.desktopWallpaper) {
     status.append("Para aplicarlo directamente, abre Leyendas como aplicación. ");
     const link = document.createElement("a");
-    link.href = "https://github.com/Cde571/leyendas-wallpapers/releases/download/v0.2.3/Leyendas-Portable.exe";
+    link.href = "https://github.com/Cde571/leyendas-wallpapers/releases/download/v0.2.4/Leyendas-Portable.exe";
     link.textContent = "Descargar aplicación para Windows ↗";
     link.rel = "noopener noreferrer";
     status.append(link);
