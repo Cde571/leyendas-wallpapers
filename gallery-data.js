@@ -130,5 +130,21 @@ window.GALLERY_SCENES = [
   {id:"117-rumble",name:"Rumble",title:"Rumble",region:"BANDLE CITY · AMANECER",description:"Un paisaje de bandle city inspirado en Rumble.",file:"117-rumble.webp",alt:"Rumble en un paisaje de bandle city"},
   {id:"116-riven",name:"Riven",title:"Riven",region:"NOXUS · NOCHE",description:"Un paisaje de noxus inspirado en Riven.",file:"116-riven.webp",alt:"Riven en un paisaje de noxus"},
   {id:"118-ryze",name:"Ryze",title:"Ryze",region:"RUNATERRA · CREPÚSCULO",description:"Un paisaje de runaterra inspirado en Ryze.",file:"118-ryze.webp",alt:"Ryze en un paisaje de runaterra"},
-  {id:"131-smolder",name:"Smolder",title:"Smolder",region:"RUNATERRA · ATARDECER",description:"Un paisaje de runaterra inspirado en Smolder.",file:"131-smolder.webp",alt:"Smolder en un paisaje de runaterra"}
+  {id:"131-smolder",name:"Smolder",title:"Smolder",region:"RUNATERRA · ATARDECER",description:"Un paisaje de runaterra inspirado en Smolder.",file:"131-smolder.webp",alt:"Smolder en un paisaje de runaterra"},
+  {id:"135-sylas",name:"Sylas",title:"Sylas",region:"DEMACIA · ATARDECER",description:"Un paisaje de demacia inspirado en Sylas.",file:"135-sylas.webp",alt:"Sylas en un paisaje de demacia"},
+  {id:"136-syndra",name:"Syndra",title:"Syndra",region:"JONIA · NOCHE",description:"Un paisaje de jonia inspirado en Syndra.",file:"136-syndra.webp",alt:"Syndra en un paisaje de jonia"},
+  {id:"137-tahm-kench",name:"Tahm Kench",title:"Tahm Kench",region:"BILGEWATER · AMANECER",description:"Un paisaje de bilgewater inspirado en Tahm Kench.",file:"137-tahm-kench.webp",alt:"Tahm Kench en un paisaje de bilgewater"},
+  {id:"138-taliyah",name:"Taliyah",title:"Taliyah",region:"SHURIMA · CREPÚSCULO",description:"Un paisaje de shurima inspirado en Taliyah.",file:"138-taliyah.webp",alt:"Taliyah en un paisaje de shurima"},
+  {id:"139-talon",name:"Talon",title:"Talon",region:"NOXUS · ATARDECER",description:"Un paisaje de noxus inspirado en Talon.",file:"139-talon.webp",alt:"Talon en un paisaje de noxus"},
+  {id:"140-taric",name:"Taric",title:"Taric",region:"TARGON · NOCHE",description:"Un paisaje de targon inspirado en Taric.",file:"140-taric.webp",alt:"Taric en un paisaje de targon"},
+  {id:"141-tristana",name:"Tristana",title:"Tristana",region:"BANDLE CITY · AMANECER",description:"Un paisaje de bandle city inspirado en Tristana.",file:"141-tristana.webp",alt:"Tristana en un paisaje de bandle city"},
+  {id:"142-trundle",name:"Trundle",title:"Trundle",region:"FRELJORD · CREPÚSCULO",description:"Un paisaje de freljord inspirado en Trundle.",file:"142-trundle.webp",alt:"Trundle en un paisaje de freljord"},
+  {id:"143-tryndamere",name:"Tryndamere",title:"Tryndamere",region:"FRELJORD · ATARDECER",description:"Un paisaje de freljord inspirado en Tryndamere.",file:"143-tryndamere.webp",alt:"Tryndamere en un paisaje de freljord"},
+  {id:"144-twisted-fate",name:"Twisted Fate",title:"Twisted Fate",region:"BILGEWATER · NOCHE",description:"Un paisaje de bilgewater inspirado en Twisted Fate.",file:"144-twisted-fate.webp",alt:"Twisted Fate en un paisaje de bilgewater"},
+  {id:"145-twitch",name:"Twitch",title:"Twitch",region:"ZAUN · AMANECER",description:"Un paisaje de zaun inspirado en Twitch.",file:"145-twitch.webp",alt:"Twitch en un paisaje de zaun"},
+  {id:"146-udyr",name:"Udyr",title:"Udyr",region:"FRELJORD · CREPÚSCULO",description:"Un paisaje de freljord inspirado en Udyr.",file:"146-udyr.webp",alt:"Udyr en un paisaje de freljord"},
+  {id:"132-sona",name:"Sona",title:"Sona",region:"DEMACIA · NOCHE",description:"Un paisaje de demacia inspirado en Sona.",file:"132-sona.webp",alt:"Sona en un paisaje de demacia"},
+  {id:"133-soraka",name:"Soraka",title:"Soraka",region:"TARGON · AMANECER",description:"Un paisaje de targon inspirado en Soraka.",file:"133-soraka.webp",alt:"Soraka en un paisaje de targon"},
+  {id:"134-swain",name:"Swain",title:"Swain",region:"NOXUS · CREPÚSCULO",description:"Un paisaje de noxus inspirado en Swain.",file:"134-swain.webp",alt:"Swain en un paisaje de noxus"},
+  {id:"147-urgot",name:"Urgot",title:"Urgot",region:"ZAUN · ATARDECER",description:"Un paisaje de zaun inspirado en Urgot.",file:"147-urgot.webp",alt:"Urgot en un paisaje de zaun"}
 ];
