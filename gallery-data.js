@@ -162,5 +162,16 @@ window.GALLERY_SCENES = [
   {id:"162-xin-zhao",name:"Xin Zhao",title:"Xin Zhao",region:"DEMACIA · CREPÚSCULO",description:"Un paisaje de demacia inspirado en Xin Zhao.",file:"162-xin-zhao.webp",alt:"Xin Zhao en un paisaje de demacia"},
   {id:"148-varus",name:"Varus",title:"Varus",region:"JONIA · NOCHE",description:"Un paisaje de jonia inspirado en Varus.",file:"148-varus.webp",alt:"Varus en un paisaje de jonia"},
   {id:"149-vayne",name:"Vayne",title:"Vayne",region:"DEMACIA · AMANECER",description:"Un paisaje de demacia inspirado en Vayne.",file:"149-vayne.webp",alt:"Vayne en un paisaje de demacia"},
-  {id:"163-yone",name:"Yone",title:"Yone",region:"JONIA · ATARDECER",description:"Un paisaje de jonia inspirado en Yone.",file:"163-yone.webp",alt:"Yone en un paisaje de jonia"}
+  {id:"163-yone",name:"Yone",title:"Yone",region:"JONIA · ATARDECER",description:"Un paisaje de jonia inspirado en Yone.",file:"163-yone.webp",alt:"Yone en un paisaje de jonia"},
+  {id:"167-zaahen",name:"Zaahen",title:"Zaahen",region:"RUNATERRA · ATARDECER",description:"Un paisaje de runaterra inspirado en Zaahen.",file:"167-zaahen.webp",alt:"Zaahen en un paisaje de runaterra"},
+  {id:"168-zac",name:"Zac",title:"Zac",region:"ZAUN · NOCHE",description:"Un paisaje de zaun inspirado en Zac.",file:"168-zac.webp",alt:"Zac en un paisaje de zaun"},
+  {id:"169-zed",name:"Zed",title:"Zed",region:"JONIA · AMANECER",description:"Un paisaje de jonia inspirado en Zed.",file:"169-zed.webp",alt:"Zed en un paisaje de jonia"},
+  {id:"170-zeri",name:"Zeri",title:"Zeri",region:"ZAUN · CREPÚSCULO",description:"Un paisaje de zaun inspirado en Zeri.",file:"170-zeri.webp",alt:"Zeri en un paisaje de zaun"},
+  {id:"171-ziggs",name:"Ziggs",title:"Ziggs",region:"RUNATERRA · ATARDECER",description:"Un paisaje de runaterra inspirado en Ziggs.",file:"171-ziggs.webp",alt:"Ziggs en un paisaje de runaterra"},
+  {id:"172-zilean",name:"Zilean",title:"Zilean",region:"SHURIMA · NOCHE",description:"Un paisaje de shurima inspirado en Zilean.",file:"172-zilean.webp",alt:"Zilean en un paisaje de shurima"},
+  {id:"173-zoe",name:"Zoe",title:"Zoe",region:"TARGON · AMANECER",description:"Un paisaje de targon inspirado en Zoe.",file:"173-zoe.webp",alt:"Zoe en un paisaje de targon"},
+  {id:"164-yorick",name:"Yorick",title:"Yorick",region:"ISLAS DE LA SOMBRA · NOCHE",description:"Un paisaje de islas de la sombra inspirado en Yorick.",file:"164-yorick.webp",alt:"Yorick en un paisaje de islas de la sombra"},
+  {id:"165-yunara",name:"Yunara",title:"Yunara",region:"JONIA · AMANECER",description:"Un paisaje de jonia inspirado en Yunara.",file:"165-yunara.webp",alt:"Yunara en un paisaje de jonia"},
+  {id:"166-yuumi",name:"Yuumi",title:"Yuumi",region:"BANDLE CITY · CREPÚSCULO",description:"Un paisaje de bandle city inspirado en Yuumi.",file:"166-yuumi.webp",alt:"Yuumi en un paisaje de bandle city"},
+  {id:"174-zyra",name:"Zyra",title:"Zyra",region:"IXTAL · CREPÚSCULO",description:"Un paisaje de ixtal inspirado en Zyra.",file:"174-zyra.webp",alt:"Zyra en un paisaje de ixtal"}
 ];
