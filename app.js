@@ -1,5 +1,9 @@
 const scenes = [...window.GALLERY_SCENES];
 const prompts = window.GALLERY_PROMPTS || {};
+const downloadRelease = "https://github.com/Cde571/leyendas-wallpapers/releases/download/v0.2.2/";
+const downloadsApi = "https://api.github.com/repos/Cde571/leyendas-wallpapers/releases/tags/v0.2.2";
+const hostedWeb = /^https?:$/.test(location.protocol) && !window.desktopWallpaper;
+const downloadCounts = new Map();
 const $ = selector => document.querySelector(selector);
 const featuredId = document.body.dataset.featured;
 const featured = scenes.find(scene => scene.id === featuredId) || scenes[0];
@@ -16,8 +20,48 @@ let motionPaused = false;
 let closeTimer;
 let toastTimer;
 let copyTimer;
+let countsRequest;
+let lastCountsRead = 0;
+let downloadRefreshTimer;
 
 function asset(scene) { return scene.url || `assets/${scene.file}`; }
+function downloadKey(scene) { return scene?.file?.replace(/\.[^.]+$/, ""); }
+function downloadHref(scene) { return hostedWeb && !scene.imported ? downloadRelease + encodeURIComponent(scene.file) : asset(scene); }
+function countLabel(scene, compact = true) {
+  const count = downloadCounts.get(downloadKey(scene));
+  const value = typeof count === "number" ? count.toLocaleString("es-CO") : "—";
+  return compact ? `↓ ${value}` : `${value} ${count === 1 ? "descarga" : "descargas"} web`;
+}
+function renderDownloadCounts() {
+  document.querySelectorAll("[data-download-key]").forEach(badge => {
+    const count = downloadCounts.get(badge.dataset.downloadKey);
+    badge.textContent = `↓ ${typeof count === "number" ? count.toLocaleString("es-CO") : "—"}`;
+  });
+  const selected = scenes.find(scene => scene.id === selectedId);
+  if (selected) $("#detail-download-count").textContent = countLabel(selected, false);
+}
+async function loadDownloadCounts(force = false) {
+  if (typeof fetch !== "function") return;
+  if (countsRequest) return countsRequest;
+  if (!force && Date.now() - lastCountsRead < 300000) return;
+  countsRequest = (async () => {
+    const response = await fetch(downloadsApi, {
+      headers: { Accept: "application/vnd.github+json" }, cache: "no-store"
+    });
+    if (!response.ok) throw new Error(`No se pudo leer el contador (${response.status}).`);
+    const release = await response.json();
+    const assets = release.assets;
+    if (!Array.isArray(assets)) throw new Error("Respuesta de descargas no válida.");
+    assets.forEach(item => {
+      if (/\.(png|webp)$/i.test(item.name) && Number.isInteger(item.download_count)) {
+        downloadCounts.set(item.name.replace(/\.[^.]+$/, ""), item.download_count);
+      }
+    });
+    lastCountsRead = Date.now();
+    renderDownloadCounts();
+  })().catch(() => {}).finally(() => { countsRequest = null; });
+  return countsRequest;
+}
 function isVideo(scene) { return scene.kind === "video"; }
 function fileName(scene) { return scene.fileName || scene.file; }
 function regionName(scene) { return scene.region.split(" · ")[0]; }
@@ -70,6 +114,14 @@ function renderGallery() {
     title.textContent = scene.title;
     const action = document.createElement("em");
     action.textContent = "Ver en grande ↗";
+    if (!scene.imported) {
+      const badge = document.createElement("span");
+      badge.className = "card-download-count";
+      badge.dataset.downloadKey = downloadKey(scene);
+      badge.title = "Descargas desde la web";
+      badge.textContent = countLabel(scene);
+      card.append(badge);
+    }
     caption.append(area,title,action);
     card.append(image,caption);
     card.addEventListener("click",() => openDetail(scene.id,card));
@@ -91,6 +143,7 @@ function renderGallery() {
   $(".hero-image-index").textContent = `${String(scenes.indexOf(featured)+1).padStart(2,"0")} / ${String(scenes.length).padStart(2,"0")}`;
   $("#empty-state").hidden = items.length > 0;
   $("#clear-button").hidden = !filtered;
+  renderDownloadCounts();
 }
 
 function resetTone() {
@@ -131,8 +184,11 @@ function showDetail(scene) {
   clearTimeout(copyTimer);
   $("#copy-prompt").textContent = "Copiar prompt ⧉";
   $(".detail-panel").scrollTop = 0;
-  $("#detail-download").href = asset(scene);
-  $("#detail-download").download = fileName(scene);
+  $("#detail-download").href = downloadHref(scene);
+  if (hostedWeb && !scene.imported) $("#detail-download").removeAttribute("download");
+  else $("#detail-download").download = fileName(scene);
+  $("#detail-download-count").hidden = scene.imported;
+  $("#detail-download-count").textContent = countLabel(scene, false);
   $("#remove-button").hidden = !scene.imported;
   const items = navigationScenes();
   const position = items.findIndex(item => item.id === scene.id);
@@ -304,9 +360,11 @@ async function loadImported() {
 $("#featured-image").src = asset(featured);
 $("#featured-image").alt = featured.alt;
 $("#hero-region").textContent = featured.region;
+$("#featured-download-count").dataset.downloadKey = downloadKey(featured);
 populateRegions();
 renderGallery();
 loadImported();
+loadDownloadCounts();
 requestAnimationFrame(() => document.body.classList.add("is-ready"));
 
 let progressFrame = 0;
@@ -335,7 +393,11 @@ if ("IntersectionObserver" in window) {
     reveal.observe(element);
   });
 }
-document.addEventListener("visibilitychange",() => document.body.classList.toggle("page-hidden",document.hidden));
+document.addEventListener("visibilitychange",() => {
+  document.body.classList.toggle("page-hidden",document.hidden);
+  if (!document.hidden) loadDownloadCounts();
+});
+window.addEventListener("focus",() => loadDownloadCounts());
 search.addEventListener("input",renderGallery);
 region.addEventListener("change",renderGallery);
 $("#clear-button").addEventListener("click",clearFilters);
@@ -357,6 +419,11 @@ $("#motion-button").addEventListener("click",event => {
 $("#detail-close").addEventListener("click",() => closeDetail());
 $("#detail-prev").addEventListener("click",() => stepDetail(-1));
 $("#detail-next").addEventListener("click",() => stepDetail(1));
+$("#detail-download").addEventListener("click",() => {
+  if (!hostedWeb || scenes.find(scene => scene.id === selectedId)?.imported) return;
+  clearTimeout(downloadRefreshTimer);
+  downloadRefreshTimer = setTimeout(() => loadDownloadCounts(true), 30000);
+});
 $("#copy-prompt").addEventListener("click",copyPrompt);
 dialog.addEventListener("click",event => { if (event.target === dialog) closeDetail(); });
 dialog.addEventListener("cancel",event => { event.preventDefault(); closeDetail(); });
@@ -446,7 +513,7 @@ $("#detail-apply").addEventListener("click",async event => {
   if (!window.desktopWallpaper) {
     status.append("Para aplicarlo directamente, abre Leyendas como aplicación. ");
     const link = document.createElement("a");
-    link.href = "https://github.com/Cde571/leyendas-wallpapers/releases/download/v0.2.2/Leyendas-Portable.exe";
+    link.href = "https://github.com/Cde571/leyendas-wallpapers/releases/download/v0.2.3/Leyendas-Portable.exe";
     link.textContent = "Descargar aplicación para Windows ↗";
     link.rel = "noopener noreferrer";
     status.append(link);

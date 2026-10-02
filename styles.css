@@ -35,6 +35,7 @@ h1,h2,h3,p{margin-top:0}h1,h2{font-weight:400}
 .hero:hover .hero-art img{transform:scale(1.055)}
 .hero-image-label,.hero-image-index{position:absolute;z-index:2;color:#f8eee0;text-shadow:0 1px 9px #000;letter-spacing:.12em;font:9px DaysOne,'Segoe UI',sans-serif}
 .hero-image-label{top:23px;left:25px}.hero-image-index{top:23px;right:25px}
+.hero-download-count{position:absolute;z-index:2;right:22px;bottom:20px;padding:6px 9px;border:1px solid #ffdb3c9c;border-radius:20px;background:#111225c9;color:#ffdb3c;font:10px DaysOne,'Segoe UI',sans-serif;letter-spacing:.03em}
 .hero-copy{position:relative;z-index:2}
 .hero h1{max-width:650px;margin:9px 0 14px;font:400 clamp(44px,5vw,82px)/1.02 Aboreto,Georgia,serif;letter-spacing:-.065em}
 .hero-copy p{max-width:440px;color:var(--muted);font-size:14px}
@@ -98,6 +99,7 @@ body.is-filtering .hero{display:none}
 .card-caption strong{font:400 clamp(15px,1.5vw,23px)/1.18 DaysOne,'Segoe UI',sans-serif}
 .card-caption em{font-size:11px;font-style:normal;opacity:0;transform:translateY(4px);transition:opacity .25s,transform .25s}
 .wallpaper-card:hover .card-caption em,.wallpaper-card:focus-visible .card-caption em{opacity:1;transform:none}
+.card-download-count{position:absolute;z-index:2;top:10px;right:10px;padding:5px 8px;border:1px solid #ffffff80;border-radius:20px;background:#111225d9;color:#fff;font:10px DaysOne,'Segoe UI',sans-serif;pointer-events:none}
 body[data-theme=poster] .catalog-heading h2{font-family:DaysOne,'Segoe UI',sans-serif;font-size:clamp(28px,3.6vw,55px);letter-spacing:-.06em;text-transform:uppercase}
 body[data-theme=poster] .gallery-grid{grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:185px;gap:13px}
 body[data-theme=poster] .wallpaper-card{border:3px solid #ffdb3c;border-radius:5px;box-shadow:7px 7px 0 #f34c91}
@@ -198,6 +200,8 @@ footer{display:flex;justify-content:space-between;gap:14px;margin-top:40px;paddi
 .poster-detail .detail-actions .primary-action{width:100%;min-height:52px}
 .poster-detail .secondary-download{display:block;padding:9px;text-align:center;border:1px solid #ffdb3c79;border-radius:6px;color:#ffdb3c;font:10px DaysOne,'Segoe UI',sans-serif}
 .poster-detail .secondary-download:hover{background:#ffdb3c16}
+.poster-detail .download-row{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:9px}
+.poster-detail .detail-download-count{color:#ffdb3c;font:10px DaysOne,'Segoe UI',sans-serif;white-space:nowrap}
 .poster-detail .apply-status{min-height:36px;margin:9px 0 0;color:#c9c5d0;font-size:11px}
 .poster-detail .apply-status a{display:inline-block;margin-top:5px;color:#ffdb3c;text-decoration:underline}
 .poster-detail .remove-button{margin-top:5px;color:#ffdb3c}
