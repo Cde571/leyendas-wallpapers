@@ -42,5 +42,13 @@ window.GALLERY_SCENES = [
   {id:"40-draven",name:"Draven",title:"Draven",region:"NOXUS · NOCHE",description:"Un paisaje de noxus inspirado en Draven.",file:"40-draven.webp",alt:"Draven en un paisaje de noxus"},
   {id:"41-elise",name:"Elise",title:"Elise",region:"NOXUS · AMANECER",description:"Un paisaje de noxus inspirado en Elise.",file:"41-elise.webp",alt:"Elise en un paisaje de noxus"},
   {id:"43-ezreal",name:"Ezreal",title:"Ezreal",region:"PILTOVER · ATARDECER",description:"Un paisaje de piltover inspirado en Ezreal.",file:"43-ezreal.webp",alt:"Ezreal en un paisaje de piltover"},
-  {id:"42-evelynn",name:"Evelynn",title:"Evelynn",region:"RUNATERRA · CREPÚSCULO",description:"Un paisaje de runaterra inspirado en Evelynn.",file:"42-evelynn.webp",alt:"Evelynn en un paisaje de runaterra"}
+  {id:"42-evelynn",name:"Evelynn",title:"Evelynn",region:"RUNATERRA · CREPÚSCULO",description:"Un paisaje de runaterra inspirado en Evelynn.",file:"42-evelynn.webp",alt:"Evelynn en un paisaje de runaterra"},
+  {id:"47-galio",name:"Galio",title:"Galio",region:"DEMACIA · ATARDECER",description:"Un paisaje de demacia inspirado en Galio.",file:"47-galio.webp",alt:"Galio en un paisaje de demacia"},
+  {id:"48-gangplank",name:"Gangplank",title:"Gangplank",region:"BILGEWATER · NOCHE",description:"Un paisaje de bilgewater inspirado en Gangplank.",file:"48-gangplank.webp",alt:"Gangplank en un paisaje de bilgewater"},
+  {id:"49-garen",name:"Garen",title:"Garen",region:"DEMACIA · AMANECER",description:"Un paisaje de demacia inspirado en Garen.",file:"49-garen.webp",alt:"Garen en un paisaje de demacia"},
+  {id:"50-gnar",name:"Gnar",title:"Gnar",region:"FRELJORD · CREPÚSCULO",description:"Un paisaje de freljord inspirado en Gnar.",file:"50-gnar.webp",alt:"Gnar en un paisaje de freljord"},
+  {id:"45-fiora",name:"Fiora",title:"Fiora",region:"DEMACIA · AMANECER",description:"Un paisaje de demacia inspirado en Fiora.",file:"45-fiora.webp",alt:"Fiora en un paisaje de demacia"},
+  {id:"46-fizz",name:"Fizz",title:"Fizz",region:"BILGEWATER · CREPÚSCULO",description:"Un paisaje de bilgewater inspirado en Fizz.",file:"46-fizz.webp",alt:"Fizz en un paisaje de bilgewater"},
+  {id:"44-fiddlesticks",name:"Fiddlesticks",title:"Fiddlesticks",region:"RUNATERRA · NOCHE",description:"Un paisaje de runaterra inspirado en Fiddlesticks.",file:"44-fiddlesticks.webp",alt:"Fiddlesticks en un paisaje de runaterra"},
+  {id:"51-gragas",name:"Gragas",title:"Gragas",region:"FRELJORD · ATARDECER",description:"Un paisaje de freljord inspirado en Gragas.",file:"51-gragas.webp",alt:"Gragas en un paisaje de freljord"}
 ];
