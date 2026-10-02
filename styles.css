@@ -182,6 +182,17 @@ footer{display:flex;justify-content:space-between;gap:14px;margin-top:40px;paddi
 .poster-detail .story-copy{padding:13px 14px 14px;border-left:2px solid #ffdb3c;background:linear-gradient(90deg,#ffdb3c12,transparent)}
 .poster-detail .story-heading{display:block;margin-bottom:8px;color:#ffdb3c;font:9px DaysOne,'Segoe UI',sans-serif;letter-spacing:.12em}
 .poster-detail .story-copy p{margin:0;color:#e0dce4;font-size:13px;line-height:1.62;text-wrap:pretty}
+.poster-detail .prompt-panel{margin-top:16px;padding:12px 13px;border:1px solid #ffdb3c63;border-radius:8px;background:#111424}
+.poster-detail .prompt-panel[hidden]{display:none}
+.poster-detail .prompt-bar{display:flex;align-items:center;justify-content:space-between;gap:9px}
+.poster-detail .prompt-bar span{color:#ffdb3c;font:9px DaysOne,'Segoe UI',sans-serif;letter-spacing:.06em}
+.poster-detail .prompt-bar button{flex:none;padding:7px 9px;border:1px solid #ffdb3c;border-radius:5px;background:#ffdb3c;color:#171727;font:9px DaysOne,'Segoe UI',sans-serif;cursor:pointer;transition:transform .2s,background .2s}
+.poster-detail .prompt-bar button:hover{transform:translateY(-2px);background:#fff1a2}
+.poster-detail .prompt-bar button:focus-visible,.poster-detail .prompt-panel summary:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.poster-detail .prompt-panel summary{display:flex;align-items:center;justify-content:space-between;margin-top:11px;padding-top:9px;border-top:1px solid #ffffff25;color:#c9c5d0;font-size:11px;cursor:pointer;list-style:none}
+.poster-detail .prompt-panel summary::-webkit-details-marker{display:none}
+.poster-detail .prompt-panel details[open] summary span{transform:rotate(180deg)}
+.poster-detail .prompt-panel p{max-height:175px;margin:10px 0 0;overflow:auto;overscroll-behavior:contain;color:#e0dce4;font-size:11px;line-height:1.55;user-select:text;scrollbar-width:thin;scrollbar-color:#ffdb3c70 transparent}
 .poster-detail .tone-area{margin:23px 0 18px}.poster-detail .tone-area small{margin-top:5px}
 .poster-detail .detail-actions{display:grid;gap:13px}
 .poster-detail .detail-actions .primary-action{width:100%;min-height:52px}

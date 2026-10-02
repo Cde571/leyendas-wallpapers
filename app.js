@@ -1,4 +1,5 @@
 const scenes = [...window.GALLERY_SCENES];
+const prompts = window.GALLERY_PROMPTS || {};
 const $ = selector => document.querySelector(selector);
 const featuredId = document.body.dataset.featured;
 const featured = scenes.find(scene => scene.id === featuredId) || scenes[0];
@@ -14,6 +15,7 @@ let selectedId = null;
 let motionPaused = false;
 let closeTimer;
 let toastTimer;
+let copyTimer;
 
 function asset(scene) { return scene.url || `assets/${scene.file}`; }
 function isVideo(scene) { return scene.kind === "video"; }
@@ -122,6 +124,12 @@ function showDetail(scene) {
   $("#detail-region").textContent = scene.region;
   $("#detail-title").textContent = scene.title;
   $("#detail-description").textContent = scene.description;
+  const prompt = prompts[scene.file?.replace(/\.[^.]+$/, "")];
+  $("#prompt-panel").hidden = !prompt;
+  $("#detail-prompt").textContent = prompt || "";
+  $("#prompt-details").open = false;
+  clearTimeout(copyTimer);
+  $("#copy-prompt").textContent = "Copiar prompt ⧉";
   $(".detail-panel").scrollTop = 0;
   $("#detail-download").href = asset(scene);
   $("#detail-download").download = fileName(scene);
@@ -211,6 +219,38 @@ function showToast(message) {
   toast.classList.add("visible");
   clearTimeout(toastTimer);
   toastTimer = setTimeout(() => toast.classList.remove("visible"),3600);
+}
+function fallbackCopy(text) {
+  const field = document.createElement("textarea");
+  field.value = text;
+  field.setAttribute("readonly", "");
+  field.style.cssText = "position:fixed;left:-9999px;top:0;opacity:0";
+  document.body.append(field);
+  field.select();
+  try { return document.execCommand?.("copy") === true; }
+  catch { return false; }
+  finally { field.remove(); }
+}
+async function copyPrompt() {
+  const scene = scenes.find(item => item.id === selectedId);
+  const prompt = prompts[scene?.file?.replace(/\.[^.]+$/, "")];
+  if (!prompt) return;
+  let copied = false;
+  try {
+    if (window.desktopWallpaper?.copyText) {
+      await window.desktopWallpaper.copyText(prompt);
+      copied = true;
+    } else if (navigator.clipboard?.writeText) {
+      await navigator.clipboard.writeText(prompt);
+      copied = true;
+    }
+  } catch { /* Se intenta el método de selección como alternativa. */ }
+  if (!copied) copied = fallbackCopy(prompt);
+  if (!copied) { showToast("No se pudo copiar. Abre el prompt y selecciona el texto."); return; }
+  $("#copy-prompt").textContent = "¡Copiado! ✓";
+  showToast("Prompt copiado al portapapeles.");
+  clearTimeout(copyTimer);
+  copyTimer = setTimeout(() => $("#copy-prompt").textContent = "Copiar prompt ⧉", 2200);
 }
 function titleFromFile(filename) { return filename.replace(/\.[^.]+$/,'').replace(/[-_]+/g,' ').trim().replace(/\s+/g,' ').slice(0,46) || "Nuevo fondo"; }
 
@@ -317,6 +357,7 @@ $("#motion-button").addEventListener("click",event => {
 $("#detail-close").addEventListener("click",() => closeDetail());
 $("#detail-prev").addEventListener("click",() => stepDetail(-1));
 $("#detail-next").addEventListener("click",() => stepDetail(1));
+$("#copy-prompt").addEventListener("click",copyPrompt);
 dialog.addEventListener("click",event => { if (event.target === dialog) closeDetail(); });
 dialog.addEventListener("cancel",event => { event.preventDefault(); closeDetail(); });
 dialog.addEventListener("close",() => document.body.classList.remove("modal-open"));
@@ -405,7 +446,7 @@ $("#detail-apply").addEventListener("click",async event => {
   if (!window.desktopWallpaper) {
     status.append("Para aplicarlo directamente, abre Leyendas como aplicación. ");
     const link = document.createElement("a");
-    link.href = "https://github.com/Cde571/leyendas-wallpapers/releases/download/v0.2.1/Leyendas-Portable.exe";
+    link.href = "https://github.com/Cde571/leyendas-wallpapers/releases/download/v0.2.2/Leyendas-Portable.exe";
     link.textContent = "Descargar aplicación para Windows ↗";
     link.rel = "noopener noreferrer";
     status.append(link);

@@ -8,7 +8,7 @@ La página permite buscar, filtrar, previsualizar a pantalla completa, descargar
 
 Una pestaña web no puede cambiar el fondo del sistema. Descarga **Leyendas-Portable.exe** desde [la última versión de GitHub](https://github.com/Cde571/leyendas-wallpapers/releases/latest) para aplicar imágenes fijas en Windows. Para videos en Windows, instala también [Lively Wallpaper](https://github.com/rocksdanister/lively).
 
-El [pack completo](https://github.com/Cde571/leyendas-wallpapers/releases/download/v0.2.0/pack-174-fondos-league.zip) reúne los 174 PNG originales y un prompt de movimiento suave para cada fondo. Cada escena de la galería incluye una descripción propia en su vista ampliada.
+El [pack completo](https://github.com/Cde571/leyendas-wallpapers/releases/download/v0.2.0/pack-174-fondos-league.zip) reúne los 174 PNG originales y un prompt de movimiento suave para cada fondo. Cada escena de la galería incluye una descripción propia y un botón para copiar su prompt de animación en la vista ampliada.
 
 ## Añadir fondos a la galería
 
