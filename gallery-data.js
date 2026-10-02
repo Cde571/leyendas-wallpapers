@@ -66,5 +66,21 @@ window.GALLERY_SCENES = [
   {id:"52-graves",name:"Graves",title:"Graves",region:"BILGEWATER · NOCHE",description:"Un paisaje de bilgewater inspirado en Graves.",file:"52-graves.webp",alt:"Graves en un paisaje de bilgewater"},
   {id:"53-gwen",name:"Gwen",title:"Gwen",region:"ISLAS DE LA SOMBRA · AMANECER",description:"Un paisaje de islas de la sombra inspirado en Gwen.",file:"53-gwen.webp",alt:"Gwen en un paisaje de islas de la sombra"},
   {id:"54-hecarim",name:"Hecarim",title:"Hecarim",region:"ISLAS DE LA SOMBRA · CREPÚSCULO",description:"Un paisaje de islas de la sombra inspirado en Hecarim.",file:"54-hecarim.webp",alt:"Hecarim en un paisaje de islas de la sombra"},
-  {id:"67-karma",name:"Karma",title:"Karma",region:"JONIA · ATARDECER",description:"Un paisaje de jonia inspirado en Karma.",file:"67-karma.webp",alt:"Karma en un paisaje de jonia"}
+  {id:"67-karma",name:"Karma",title:"Karma",region:"JONIA · ATARDECER",description:"Un paisaje de jonia inspirado en Karma.",file:"67-karma.webp",alt:"Karma en un paisaje de jonia"},
+  {id:"72-kayn",name:"Kayn",title:"Kayn",region:"JONIA · NOCHE",description:"Un paisaje de jonia inspirado en Kayn.",file:"72-kayn.webp",alt:"Kayn en un paisaje de jonia"},
+  {id:"73-kennen",name:"Kennen",title:"Kennen",region:"JONIA · AMANECER",description:"Un paisaje de jonia inspirado en Kennen.",file:"73-kennen.webp",alt:"Kennen en un paisaje de jonia"},
+  {id:"74-kha-zix",name:"Kha'Zix",title:"Kha'Zix",region:"EL VACÍO · CREPÚSCULO",description:"Un paisaje de el vacío inspirado en Kha'Zix.",file:"74-kha-zix.webp",alt:"Kha'Zix en un paisaje de el vacío"},
+  {id:"75-kled",name:"Kled",title:"Kled",region:"NOXUS · ATARDECER",description:"Un paisaje de noxus inspirado en Kled.",file:"75-kled.webp",alt:"Kled en un paisaje de noxus"},
+  {id:"76-kog-maw",name:"Kog'Maw",title:"Kog'Maw",region:"EL VACÍO · NOCHE",description:"Un paisaje de el vacío inspirado en Kog'Maw.",file:"76-kog-maw.webp",alt:"Kog'Maw en un paisaje de el vacío"},
+  {id:"77-leblanc",name:"LeBlanc",title:"LeBlanc",region:"NOXUS · AMANECER",description:"Un paisaje de noxus inspirado en LeBlanc.",file:"77-leblanc.webp",alt:"LeBlanc en un paisaje de noxus"},
+  {id:"78-lee-sin",name:"Lee Sin",title:"Lee Sin",region:"JONIA · CREPÚSCULO",description:"Un paisaje de jonia inspirado en Lee Sin.",file:"78-lee-sin.webp",alt:"Lee Sin en un paisaje de jonia"},
+  {id:"79-lillia",name:"Lillia",title:"Lillia",region:"JONIA · ATARDECER",description:"Un paisaje de jonia inspirado en Lillia.",file:"79-lillia.webp",alt:"Lillia en un paisaje de jonia"},
+  {id:"80-lissandra",name:"Lissandra",title:"Lissandra",region:"FRELJORD · NOCHE",description:"Un paisaje de freljord inspirado en Lissandra.",file:"80-lissandra.webp",alt:"Lissandra en un paisaje de freljord"},
+  {id:"81-locke",name:"Locke",title:"Locke",region:"RUNATERRA · AMANECER",description:"Un paisaje de runaterra inspirado en Locke.",file:"81-locke.webp",alt:"Locke en un paisaje de runaterra"},
+  {id:"82-lucian",name:"Lucian",title:"Lucian",region:"RUNATERRA · CREPÚSCULO",description:"Un paisaje de runaterra inspirado en Lucian.",file:"82-lucian.webp",alt:"Lucian en un paisaje de runaterra"},
+  {id:"68-karthus",name:"Karthus",title:"Karthus",region:"ISLAS DE LA SOMBRA · NOCHE",description:"Un paisaje de islas de la sombra inspirado en Karthus.",file:"68-karthus.webp",alt:"Karthus en un paisaje de islas de la sombra"},
+  {id:"69-kassadin",name:"Kassadin",title:"Kassadin",region:"EL VACÍO · AMANECER",description:"Un paisaje de el vacío inspirado en Kassadin.",file:"69-kassadin.webp",alt:"Kassadin en un paisaje de el vacío"},
+  {id:"70-katarina",name:"Katarina",title:"Katarina",region:"NOXUS · CREPÚSCULO",description:"Un paisaje de noxus inspirado en Katarina.",file:"70-katarina.webp",alt:"Katarina en un paisaje de noxus"},
+  {id:"71-kayle",name:"Kayle",title:"Kayle",region:"DEMACIA · ATARDECER",description:"Un paisaje de demacia inspirado en Kayle.",file:"71-kayle.webp",alt:"Kayle en un paisaje de demacia"},
+  {id:"83-lulu",name:"Lulu",title:"Lulu",region:"BANDLE CITY · ATARDECER",description:"Un paisaje de bandle city inspirado en Lulu.",file:"83-lulu.webp",alt:"Lulu en un paisaje de bandle city"}
 ];

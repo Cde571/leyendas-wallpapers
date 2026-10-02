@@ -1,14 +1,14 @@
 # Campeones pendientes para Leyendas
 
-Actualizado el 1 de octubre de 2026 con la lista oficial de League of Legends, versión 16.19.1. La galería tiene 67 fondos de 66 campeones distintos; Yasuo aparece dos veces. De los 173 campeones actuales, quedan **107** sin fondo.
+Actualizado el 1 de octubre de 2026 con la lista oficial de League of Legends, versión 16.19.1. La galería tiene 83 fondos de 82 campeones distintos; Yasuo aparece dos veces. De los 173 campeones actuales, quedan **91** sin fondo.
 
 Fuentes: [lista oficial de campeones](https://www.leagueoflegends.com/es-es/champions/) y [Riot Data Dragon, versión 16.19.1](https://ddragon.leagueoflegends.com/cdn/16.19.1/data/es_ES/champion.json).
 
-## Ya presentes (66)
+## Ya presentes (82)
 
-Aatrox, Ahri, Akali, Akshan, Alistar, Ambessa, Amumu, Anivia, Annie, Aphelios, Ashe, Aurelion Sol, Aurora, Azir, Bardo, Bel'Veth, Blitzcrank, Brand, Braum, Briar, Caitlyn, Camille, Cassiopeia, Cho'Gath, Corki, Darius, Diana, Dr. Mundo, Draven, Ekko, Elise, Evelynn, Ezreal, Fiddlesticks, Fiora, Fizz, Galio, Gangplank, Garen, Gnar, Gragas, Graves, Gwen, Hecarim, Heimerdinger, Hwei, Illaoi, Irelia, Ivern, Janna, Jarvan IV, Jax, Jayce, Jhin, Jinx, K'Sante, Kai'Sa, Kalista, Karma, Kindred, Leona, Lux, Miss Fortune, Teemo, Thresh, Yasuo.
+Aatrox, Ahri, Akali, Akshan, Alistar, Ambessa, Amumu, Anivia, Annie, Aphelios, Ashe, Aurelion Sol, Aurora, Azir, Bardo, Bel'Veth, Blitzcrank, Brand, Braum, Briar, Caitlyn, Camille, Cassiopeia, Cho'Gath, Corki, Darius, Diana, Dr. Mundo, Draven, Ekko, Elise, Evelynn, Ezreal, Fiddlesticks, Fiora, Fizz, Galio, Gangplank, Garen, Gnar, Gragas, Graves, Gwen, Hecarim, Heimerdinger, Hwei, Illaoi, Irelia, Ivern, Janna, Jarvan IV, Jax, Jayce, Jhin, Jinx, K'Sante, Kai'Sa, Kalista, Karma, Karthus, Kassadin, Katarina, Kayle, Kayn, Kennen, Kha'Zix, Kindred, Kled, Kog'Maw, LeBlanc, Lee Sin, Leona, Lillia, Lissandra, Locke, Lucian, Lulu, Lux, Miss Fortune, Teemo, Thresh, Yasuo.
 
-## Faltantes (107)
+## Faltantes (91)
 
 ### A–D (0)
 
@@ -18,9 +18,9 @@ Aatrox, Ahri, Akali, Akshan, Alistar, Ambessa, Amumu, Anivia, Annie, Aphelios, A
 
 .
 
-### I–L (16)
+### I–L (0)
 
-Karthus, Kassadin, Katarina, Kayle, Kayn, Kennen, Kha'Zix, Kled, Kog'Maw, LeBlanc, Lee Sin, Lillia, Lissandra, Locke, Lucian, Lulu.
+.
 
 ### M–R (35)
 
