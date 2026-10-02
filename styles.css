@@ -178,6 +178,10 @@ footer{display:flex;justify-content:space-between;gap:14px;margin-top:40px;paddi
 .poster-detail .detail-story{margin-top:auto}
 .poster-detail .detail-story h2{font:400 clamp(29px,2.3vw,43px)/1.03 DaysOne,'Segoe UI',sans-serif;text-transform:uppercase;letter-spacing:-.06em}
 .poster-detail .detail-story p{color:#c9c5d0}
+.poster-detail .detail-panel{overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#ffdb3c70 transparent}
+.poster-detail .story-copy{padding:13px 14px 14px;border-left:2px solid #ffdb3c;background:linear-gradient(90deg,#ffdb3c12,transparent)}
+.poster-detail .story-heading{display:block;margin-bottom:8px;color:#ffdb3c;font:9px DaysOne,'Segoe UI',sans-serif;letter-spacing:.12em}
+.poster-detail .story-copy p{margin:0;color:#e0dce4;font-size:13px;line-height:1.62;text-wrap:pretty}
 .poster-detail .tone-area{margin:23px 0 18px}.poster-detail .tone-area small{margin-top:5px}
 .poster-detail .detail-actions{display:grid;gap:13px}
 .poster-detail .detail-actions .primary-action{width:100%;min-height:52px}
