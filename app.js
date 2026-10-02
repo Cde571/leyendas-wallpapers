@@ -404,7 +404,7 @@ $("#detail-apply").addEventListener("click",async event => {
   if (!window.desktopWallpaper) {
     status.append("Para aplicarlo directamente, abre Leyendas como aplicación. ");
     const link = document.createElement("a");
-    link.href = "https://github.com/Cde571/leyendas-wallpapers/releases/download/v0.1.0/Leyendas-Portable.exe";
+    link.href = "https://github.com/Cde571/leyendas-wallpapers/releases/download/v0.2.0/Leyendas-Portable.exe";
     link.textContent = "Descargar aplicación para Windows ↗";
     link.rel = "noopener noreferrer";
     status.append(link);
