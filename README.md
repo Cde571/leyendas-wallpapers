@@ -4,6 +4,8 @@ Galería web de fondos ilustrados con diseño de póster. Abre `index.html` para
 
 La página permite buscar, filtrar, previsualizar a pantalla completa, descargar e importar imágenes o videos propios. **Añadir fondo** abre una ficha con vista previa y validación: PNG, JPG, WebP, MP4 o WebM de hasta 100 MB; mínimo 1280 × 720 px y formato horizontal 16:9 (margen del 2 %). Pide personaje o lugar, región, título y descripción; skin, autor y prompt son opcionales. El archivo añadido se guarda solo en el navegador de ese equipo. El botón de la esquina superior pausa las animaciones, incluida la textura del fondo. También se respeta la preferencia del sistema para reducir movimiento.
 
+El perfil del creador aparece en la cabecera: [@Cde571 en GitHub](https://github.com/Cde571). La textura usa patrones y luces suaves generados con CSS, sin imágenes adicionales; se mueve lentamente y se detiene al pausar el movimiento.
+
 ## Aplicar un fondo al escritorio
 
 Una pestaña web no puede cambiar el fondo del sistema. Descarga **Leyendas-Portable.exe** desde [la última versión de GitHub](https://github.com/Cde571/leyendas-wallpapers/releases/latest) para aplicar imágenes fijas en Windows. Para videos en Windows, instala también [Lively Wallpaper](https://github.com/rocksdanister/lively).
