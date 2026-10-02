@@ -50,5 +50,21 @@ window.GALLERY_SCENES = [
   {id:"45-fiora",name:"Fiora",title:"Fiora",region:"DEMACIA · AMANECER",description:"Un paisaje de demacia inspirado en Fiora.",file:"45-fiora.webp",alt:"Fiora en un paisaje de demacia"},
   {id:"46-fizz",name:"Fizz",title:"Fizz",region:"BILGEWATER · CREPÚSCULO",description:"Un paisaje de bilgewater inspirado en Fizz.",file:"46-fizz.webp",alt:"Fizz en un paisaje de bilgewater"},
   {id:"44-fiddlesticks",name:"Fiddlesticks",title:"Fiddlesticks",region:"RUNATERRA · NOCHE",description:"Un paisaje de runaterra inspirado en Fiddlesticks.",file:"44-fiddlesticks.webp",alt:"Fiddlesticks en un paisaje de runaterra"},
-  {id:"51-gragas",name:"Gragas",title:"Gragas",region:"FRELJORD · ATARDECER",description:"Un paisaje de freljord inspirado en Gragas.",file:"51-gragas.webp",alt:"Gragas en un paisaje de freljord"}
+  {id:"51-gragas",name:"Gragas",title:"Gragas",region:"FRELJORD · ATARDECER",description:"Un paisaje de freljord inspirado en Gragas.",file:"51-gragas.webp",alt:"Gragas en un paisaje de freljord"},
+  {id:"55-heimerdinger",name:"Heimerdinger",title:"Heimerdinger",region:"PILTOVER · ATARDECER",description:"Un paisaje de piltover inspirado en Heimerdinger.",file:"55-heimerdinger.webp",alt:"Heimerdinger en un paisaje de piltover"},
+  {id:"56-hwei",name:"Hwei",title:"Hwei",region:"JONIA · NOCHE",description:"Un paisaje de jonia inspirado en Hwei.",file:"56-hwei.webp",alt:"Hwei en un paisaje de jonia"},
+  {id:"57-illaoi",name:"Illaoi",title:"Illaoi",region:"BILGEWATER · AMANECER",description:"Un paisaje de bilgewater inspirado en Illaoi.",file:"57-illaoi.webp",alt:"Illaoi en un paisaje de bilgewater"},
+  {id:"58-ivern",name:"Ivern",title:"Ivern",region:"JONIA · CREPÚSCULO",description:"Un paisaje de jonia inspirado en Ivern.",file:"58-ivern.webp",alt:"Ivern en un paisaje de jonia"},
+  {id:"59-janna",name:"Janna",title:"Janna",region:"ZAUN · ATARDECER",description:"Un paisaje de zaun inspirado en Janna.",file:"59-janna.webp",alt:"Janna en un paisaje de zaun"},
+  {id:"60-jarvan-iv",name:"Jarvan IV",title:"Jarvan IV",region:"DEMACIA · NOCHE",description:"Un paisaje de demacia inspirado en Jarvan IV.",file:"60-jarvan-iv.webp",alt:"Jarvan IV en un paisaje de demacia"},
+  {id:"61-jax",name:"Jax",title:"Jax",region:"RUNATERRA · AMANECER",description:"Un paisaje de runaterra inspirado en Jax.",file:"61-jax.webp",alt:"Jax en un paisaje de runaterra"},
+  {id:"62-jayce",name:"Jayce",title:"Jayce",region:"PILTOVER · CREPÚSCULO",description:"Un paisaje de piltover inspirado en Jayce.",file:"62-jayce.webp",alt:"Jayce en un paisaje de piltover"},
+  {id:"63-jhin",name:"Jhin",title:"Jhin",region:"JONIA · ATARDECER",description:"Un paisaje de jonia inspirado en Jhin.",file:"63-jhin.webp",alt:"Jhin en un paisaje de jonia"},
+  {id:"64-k-sante",name:"K'Sante",title:"K'Sante",region:"SHURIMA · NOCHE",description:"Un paisaje de shurima inspirado en K'Sante.",file:"64-k-sante.webp",alt:"K'Sante en un paisaje de shurima"},
+  {id:"65-kai-sa",name:"Kai'Sa",title:"Kai'Sa",region:"EL VACÍO · AMANECER",description:"Un paisaje de el vacío inspirado en Kai'Sa.",file:"65-kai-sa.webp",alt:"Kai'Sa en un paisaje de el vacío"},
+  {id:"66-kalista",name:"Kalista",title:"Kalista",region:"ISLAS DE LA SOMBRA · CREPÚSCULO",description:"Un paisaje de islas de la sombra inspirado en Kalista.",file:"66-kalista.webp",alt:"Kalista en un paisaje de islas de la sombra"},
+  {id:"52-graves",name:"Graves",title:"Graves",region:"BILGEWATER · NOCHE",description:"Un paisaje de bilgewater inspirado en Graves.",file:"52-graves.webp",alt:"Graves en un paisaje de bilgewater"},
+  {id:"53-gwen",name:"Gwen",title:"Gwen",region:"ISLAS DE LA SOMBRA · AMANECER",description:"Un paisaje de islas de la sombra inspirado en Gwen.",file:"53-gwen.webp",alt:"Gwen en un paisaje de islas de la sombra"},
+  {id:"54-hecarim",name:"Hecarim",title:"Hecarim",region:"ISLAS DE LA SOMBRA · CREPÚSCULO",description:"Un paisaje de islas de la sombra inspirado en Hecarim.",file:"54-hecarim.webp",alt:"Hecarim en un paisaje de islas de la sombra"},
+  {id:"67-karma",name:"Karma",title:"Karma",region:"JONIA · ATARDECER",description:"Un paisaje de jonia inspirado en Karma.",file:"67-karma.webp",alt:"Karma en un paisaje de jonia"}
 ];
