@@ -82,5 +82,21 @@ window.GALLERY_SCENES = [
   {id:"69-kassadin",name:"Kassadin",title:"Kassadin",region:"EL VACÍO · AMANECER",description:"Un paisaje de el vacío inspirado en Kassadin.",file:"69-kassadin.webp",alt:"Kassadin en un paisaje de el vacío"},
   {id:"70-katarina",name:"Katarina",title:"Katarina",region:"NOXUS · CREPÚSCULO",description:"Un paisaje de noxus inspirado en Katarina.",file:"70-katarina.webp",alt:"Katarina en un paisaje de noxus"},
   {id:"71-kayle",name:"Kayle",title:"Kayle",region:"DEMACIA · ATARDECER",description:"Un paisaje de demacia inspirado en Kayle.",file:"71-kayle.webp",alt:"Kayle en un paisaje de demacia"},
-  {id:"83-lulu",name:"Lulu",title:"Lulu",region:"BANDLE CITY · ATARDECER",description:"Un paisaje de bandle city inspirado en Lulu.",file:"83-lulu.webp",alt:"Lulu en un paisaje de bandle city"}
+  {id:"83-lulu",name:"Lulu",title:"Lulu",region:"BANDLE CITY · ATARDECER",description:"Un paisaje de bandle city inspirado en Lulu.",file:"83-lulu.webp",alt:"Lulu en un paisaje de bandle city"},
+  {id:"87-maokai",name:"Maokai",title:"Maokai",region:"ISLAS DE LA SOMBRA · ATARDECER",description:"Un paisaje de islas de la sombra inspirado en Maokai.",file:"87-maokai.webp",alt:"Maokai en un paisaje de islas de la sombra"},
+  {id:"88-mel",name:"Mel",title:"Mel",region:"RUNATERRA · NOCHE",description:"Un paisaje de runaterra inspirado en Mel.",file:"88-mel.webp",alt:"Mel en un paisaje de runaterra"},
+  {id:"89-milio",name:"Milio",title:"Milio",region:"IXTAL · AMANECER",description:"Un paisaje de ixtal inspirado en Milio.",file:"89-milio.webp",alt:"Milio en un paisaje de ixtal"},
+  {id:"90-mordekaiser",name:"Mordekaiser",title:"Mordekaiser",region:"RUNATERRA · CREPÚSCULO",description:"Un paisaje de runaterra inspirado en Mordekaiser.",file:"90-mordekaiser.webp",alt:"Mordekaiser en un paisaje de runaterra"},
+  {id:"91-morgana",name:"Morgana",title:"Morgana",region:"DEMACIA · ATARDECER",description:"Un paisaje de demacia inspirado en Morgana.",file:"91-morgana.webp",alt:"Morgana en un paisaje de demacia"},
+  {id:"92-naafiri",name:"Naafiri",title:"Naafiri",region:"SHURIMA · NOCHE",description:"Un paisaje de shurima inspirado en Naafiri.",file:"92-naafiri.webp",alt:"Naafiri en un paisaje de shurima"},
+  {id:"93-nami",name:"Nami",title:"Nami",region:"RUNATERRA · AMANECER",description:"Un paisaje de runaterra inspirado en Nami.",file:"93-nami.webp",alt:"Nami en un paisaje de runaterra"},
+  {id:"94-nasus",name:"Nasus",title:"Nasus",region:"SHURIMA · CREPÚSCULO",description:"Un paisaje de shurima inspirado en Nasus.",file:"94-nasus.webp",alt:"Nasus en un paisaje de shurima"},
+  {id:"95-nautilus",name:"Nautilus",title:"Nautilus",region:"BILGEWATER · ATARDECER",description:"Un paisaje de bilgewater inspirado en Nautilus.",file:"95-nautilus.webp",alt:"Nautilus en un paisaje de bilgewater"},
+  {id:"96-neeko",name:"Neeko",title:"Neeko",region:"IXTAL · NOCHE",description:"Un paisaje de ixtal inspirado en Neeko.",file:"96-neeko.webp",alt:"Neeko en un paisaje de ixtal"},
+  {id:"97-nidalee",name:"Nidalee",title:"Nidalee",region:"IXTAL · AMANECER",description:"Un paisaje de ixtal inspirado en Nidalee.",file:"97-nidalee.webp",alt:"Nidalee en un paisaje de ixtal"},
+  {id:"98-nilah",name:"Nilah",title:"Nilah",region:"BILGEWATER · CREPÚSCULO",description:"Un paisaje de bilgewater inspirado en Nilah.",file:"98-nilah.webp",alt:"Nilah en un paisaje de bilgewater"},
+  {id:"84-maestro-yi",name:"Maestro Yi",title:"Maestro Yi",region:"JONIA · NOCHE",description:"Un paisaje de jonia inspirado en Maestro Yi.",file:"84-maestro-yi.webp",alt:"Maestro Yi en un paisaje de jonia"},
+  {id:"85-malphite",name:"Malphite",title:"Malphite",region:"IXTAL · AMANECER",description:"Un paisaje de ixtal inspirado en Malphite.",file:"85-malphite.webp",alt:"Malphite en un paisaje de ixtal"},
+  {id:"86-malzahar",name:"Malzahar",title:"Malzahar",region:"EL VACÍO · CREPÚSCULO",description:"Un paisaje de el vacío inspirado en Malzahar.",file:"86-malzahar.webp",alt:"Malzahar en un paisaje de el vacío"},
+  {id:"99-nocturne",name:"Nocturne",title:"Nocturne",region:"RUNATERRA · ATARDECER",description:"Un paisaje de runaterra inspirado en Nocturne.",file:"99-nocturne.webp",alt:"Nocturne en un paisaje de runaterra"}
 ];
