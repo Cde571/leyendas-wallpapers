@@ -146,5 +146,21 @@ window.GALLERY_SCENES = [
   {id:"132-sona",name:"Sona",title:"Sona",region:"DEMACIA · NOCHE",description:"Un paisaje de demacia inspirado en Sona.",file:"132-sona.webp",alt:"Sona en un paisaje de demacia"},
   {id:"133-soraka",name:"Soraka",title:"Soraka",region:"TARGON · AMANECER",description:"Un paisaje de targon inspirado en Soraka.",file:"133-soraka.webp",alt:"Soraka en un paisaje de targon"},
   {id:"134-swain",name:"Swain",title:"Swain",region:"NOXUS · CREPÚSCULO",description:"Un paisaje de noxus inspirado en Swain.",file:"134-swain.webp",alt:"Swain en un paisaje de noxus"},
-  {id:"147-urgot",name:"Urgot",title:"Urgot",region:"ZAUN · ATARDECER",description:"Un paisaje de zaun inspirado en Urgot.",file:"147-urgot.webp",alt:"Urgot en un paisaje de zaun"}
+  {id:"147-urgot",name:"Urgot",title:"Urgot",region:"ZAUN · ATARDECER",description:"Un paisaje de zaun inspirado en Urgot.",file:"147-urgot.webp",alt:"Urgot en un paisaje de zaun"},
+  {id:"150-veigar",name:"Veigar",title:"Veigar",region:"BANDLE CITY · CREPÚSCULO",description:"Un paisaje de bandle city inspirado en Veigar.",file:"150-veigar.webp",alt:"Veigar en un paisaje de bandle city"},
+  {id:"151-vel-koz",name:"Vel'Koz",title:"Vel'Koz",region:"EL VACÍO · ATARDECER",description:"Un paisaje de el vacío inspirado en Vel'Koz.",file:"151-vel-koz.webp",alt:"Vel'Koz en un paisaje de el vacío"},
+  {id:"152-vex",name:"Vex",title:"Vex",region:"ISLAS DE LA SOMBRA · NOCHE",description:"Un paisaje de islas de la sombra inspirado en Vex.",file:"152-vex.webp",alt:"Vex en un paisaje de islas de la sombra"},
+  {id:"153-vi",name:"Vi",title:"Vi",region:"PILTOVER · AMANECER",description:"Un paisaje de piltover inspirado en Vi.",file:"153-vi.webp",alt:"Vi en un paisaje de piltover"},
+  {id:"154-viego",name:"Viego",title:"Viego",region:"ISLAS DE LA SOMBRA · CREPÚSCULO",description:"Un paisaje de islas de la sombra inspirado en Viego.",file:"154-viego.webp",alt:"Viego en un paisaje de islas de la sombra"},
+  {id:"155-viktor",name:"Viktor",title:"Viktor",region:"ZAUN · ATARDECER",description:"Un paisaje de zaun inspirado en Viktor.",file:"155-viktor.webp",alt:"Viktor en un paisaje de zaun"},
+  {id:"157-volibear",name:"Volibear",title:"Volibear",region:"FRELJORD · AMANECER",description:"Un paisaje de freljord inspirado en Volibear.",file:"157-volibear.webp",alt:"Volibear en un paisaje de freljord"},
+  {id:"156-vladimir",name:"Vladimir",title:"Vladimir",region:"NOXUS · NOCHE",description:"Un paisaje de noxus inspirado en Vladimir.",file:"156-vladimir.webp",alt:"Vladimir en un paisaje de noxus"},
+  {id:"158-warwick",name:"Warwick",title:"Warwick",region:"ZAUN · CREPÚSCULO",description:"Un paisaje de zaun inspirado en Warwick.",file:"158-warwick.webp",alt:"Warwick en un paisaje de zaun"},
+  {id:"159-wukong",name:"Wukong",title:"Wukong",region:"JONIA · ATARDECER",description:"Un paisaje de jonia inspirado en Wukong.",file:"159-wukong.webp",alt:"Wukong en un paisaje de jonia"},
+  {id:"160-xayah",name:"Xayah",title:"Xayah",region:"JONIA · NOCHE",description:"Un paisaje de jonia inspirado en Xayah.",file:"160-xayah.webp",alt:"Xayah en un paisaje de jonia"},
+  {id:"161-xerath",name:"Xerath",title:"Xerath",region:"SHURIMA · AMANECER",description:"Un paisaje de shurima inspirado en Xerath.",file:"161-xerath.webp",alt:"Xerath en un paisaje de shurima"},
+  {id:"162-xin-zhao",name:"Xin Zhao",title:"Xin Zhao",region:"DEMACIA · CREPÚSCULO",description:"Un paisaje de demacia inspirado en Xin Zhao.",file:"162-xin-zhao.webp",alt:"Xin Zhao en un paisaje de demacia"},
+  {id:"148-varus",name:"Varus",title:"Varus",region:"JONIA · NOCHE",description:"Un paisaje de jonia inspirado en Varus.",file:"148-varus.webp",alt:"Varus en un paisaje de jonia"},
+  {id:"149-vayne",name:"Vayne",title:"Vayne",region:"DEMACIA · AMANECER",description:"Un paisaje de demacia inspirado en Vayne.",file:"149-vayne.webp",alt:"Vayne en un paisaje de demacia"},
+  {id:"163-yone",name:"Yone",title:"Yone",region:"JONIA · ATARDECER",description:"Un paisaje de jonia inspirado en Yone.",file:"163-yone.webp",alt:"Yone en un paisaje de jonia"}
 ];
